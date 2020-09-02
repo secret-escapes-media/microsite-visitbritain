@@ -1,66 +1,131 @@
 
-- id: southwest-england
+- id: southwest_england
   name: Southwest England
-  description:
-  nearby: southeast-england, east-anglia
+  coordinates:
+    local:
+      lat: "-5.711892, 50.048129"
+      lng: "-1.245830, 51.950162"
+    drive:
+      lat: "-5.711892, 50.048129"
+      lng: "1.223209, 52.989118"
 
-- id: southeast-england
+- id: southeast_england
   name: Southeast England
-  description:
-  nearby: southwest-england, east-anglia, east-midlands, west-midlands, south-wales
+  coordinates:
+    local:
+      lat: "-1.890504, 50.560979"
+      lng: "1.412256, 52.045164"
+    drive:
+      lat: "-5.711892, 50.048129"
+      lng: "1.223209, 52.989118"
 
-- id: east-anglia
+- id: east_anglia
   name: East Anglia
-  description:
-  nearby: southeast-england, east-midlands
+  coordinates:
+    local:
+      lat: "-0.544935, 51.401087"
+      lng: "1.784790, 52.972379"
+    drive:
+      lat: "-1.890504, 50.560979"
+      lng: "1.695015, 53.648232"
 
-- id: west-midlands
+- id: west_midlands
   name: West Midlands
-  description:
-  nearby: southeast-england, east-midlands, south-wales, north-wales, northwest-england
+  coordinates:
+    local:
+      lat: "-2.824265, 51.897620"
+      lng: "-1.370103, 53.507220"
+    drive:
+      lat: "-5.278739, 51.525538"
+      lng: "-0.043096, 53.769471"
 
-- id: east-midlands
+- id: east_midlands
   name: East Midlands
-  description:
-  nearby: east-anglia, southeast-england, west-midlands, yorkshire, northwest-england
+  coordinates:
+    local:
+      lat: "-1.008192, 52.023166"
+      lng: "0.214262, 53.574129"
+    drive:
+      lat: "-2.158264, 51.457937"
+      lng: "0.286644, 54.460081"
 
-- id: south-wales
+- id: south_wales
   name: South Wales
-  description:
-  nearby: west-midlands, north-wales
+  coordinates:
+    local:
+      lat: "-5.294824, 51.277178"
+      lng: "-2.672982, 52.576455"
+    drive:
+      lat: "-5.294824, 51.277178"
+      lng: "-2.496047, 53.447390"
 
-- id: north-wales
+- id: north_wales
   name: North Wales
-  description:
-  nearby: south-wales, west-midlands, northwest-england
+  coordinates:
+    local:
+      lat: "-4.458408, 52.488393"
+      lng: "-2.496047, 53.447390"
+    drive:
+      lat: "-5.294824, 51.277178"
+      lng: "-2.496047, 53.447390"
 
-- id: northwest-england
+- id: northwest_england
   name: Northwest England
-  description:
-  nearby: northeast-england, north-wales, west-midlands, yorkshire, east-midlands
+  coordinates:
+    local:
+      lat: "-3.203784, 52.849297"
+      lng: "-3.316379, 55.838643"
+    drive:
+      lat: "-4.088455, 52.566679"
+      lng: "-1.305763, 56.510168"
 
-- id: northeast-england
+- id: northeast_england
   name: Northeast England
-  description:
-  nearby: northwest-england, yorkshire
+  coordinates:
+    local:
+      lat: "-2.512132, 54.534810"
+      lng: "-1.659631, 56.099693"
+    drive:
+      lat: "-1.530952, 56.968890"
+      lng: "-0.453262, 54.637339"
 
 - id: yorkshire
   name: Yorkshire and the Humber
-  description:
-  nearby: northeast-england, northwest-england, east-midlands
+  coordinates:
+    local:
+      lat: "-2.029585, 53.361087"
+      lng: "-0.453262, 54.637339"
+    drive:
+      lat: "-2.286943, 52.742313"
+      lng: "-1.659631, 56.099693"
 
-- id: southern-scotland
+- id: southern_scotland
   name: Southern Scotland
-  description:
-  nearby: northern-scotland, northeast-england, northwest-england
+  coordinates:
+    local:
+      lat: "-5.841712, 55.512126"
+      lng: "-2.093924, 57.047717"
+    drive:
+      lat: "-5.841712, 55.512126"
+      lng: "-1.820481, 58.606231"
 
-- id: northern-scotland
+- id: northern_scotland
   name: Northern Scotland
-  description:
-  nearby: southern-scotland
+  coordinates:
+    local:
+      lat: "-6.115155, 56.766684"
+      lng: "-1.820481, 58.606231"
+    drive:
+      lat: "-5.841712, 55.512126"
+      lng: "-1.820481, 58.606231"
 
-- id: northern-ireland
+- id: northern_ireland
   name: Northern Ireland
-  description:
-  nearby:
+  coordinates:
+    local:
+      lat: "-8.157941, 54.103248"
+      lng: "-5.568268, 55.118539"
+    drive:
+      lat: "-8.157941, 54.103248"
+      lng: "-5.568268, 55.118539"
 

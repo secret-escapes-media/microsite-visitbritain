@@ -49,7 +49,6 @@
   <script>
 
     {% assign pois = site.data.pois.england | concat:  site.data.pois.wales | concat:  site.data.pois.scotland | concat:  site.data.pois.northern-ireland %}
-
     {% assign tags = site.data.tags %}
 
     var geojson = {
@@ -64,9 +63,11 @@
         {
           "type": "Feature",
           "properties": {
-            "title": "{{poi.editorial.name}}",
             "id": "{{poi.id}}",
-            "tag": "{{tag.id}}"
+            "tag": "{{tag.id}}",
+            "title": "{{poi.editorial.name}}",
+            "country": "{{poi.location.country}}",
+            "description": "{{poi.editorial.description}}"
           },
           "geometry": {
             "type": "Point",
@@ -74,13 +75,26 @@
               {{poi.location.coordinates}}
             ]
           }
-        }{% unless forloop.last%},{% endunless %}
+        },
 
       {% endif %}
       {% endfor %}
       {% endfor %}
 
       ]
+    };
+
+    var coords = {
+      {% for region in site.data.regions %}
+      {{region.id}}_local: {
+        lat: [{{region.coordinates.local.lat}}],
+        lng: [{{region.coordinates.local.lng}}]
+      },
+      {{region.id}}_drive: {
+        lat: [{{region.coordinates.drive.lat}}],
+        lng: [{{region.coordinates.drive.lng}}]
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
     };
 
   </script>

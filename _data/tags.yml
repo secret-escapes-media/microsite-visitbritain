@@ -16,3 +16,12 @@
 
 - id: city
   name: City
+
+- id: escape
+  name: Escape
+
+- id: food
+  name: Food
+
+- id: relax
+  name: Relax

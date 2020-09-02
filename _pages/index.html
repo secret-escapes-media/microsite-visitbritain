@@ -4,29 +4,19 @@ id: overview
 nav: true
 nav-order: 1
 title: Find your Escape
-
-tags:
-  - name: Coast
-  - name: Beach
-  - name: Foodie
-  - name: Family friendly
-  - name: Active
-  - name: History
-  - name: Escape
-
 ---
 
 
 {% include nav/header.html %}
 {% include nav/site.html %}
 
-<div class="search js-search" id="search" data-step="1">
+<div class="search step-1" id="search">
 
-  <div class="search__window">
+  <div class="search__window loading">
 
 
 
-    <div id="step1" class="search__step search__step-origin js-step js-step-active">
+    <div id="step-origin" class="search__step search__step-origin js-step is-active" data-origin="">
       <div class="boxpad--lg text--center">
         <div class="h h--lg">Let's find your secret escape</div>
         <p class="p--xxl">Firstly, tell us where you're travelling from?</p>
@@ -35,11 +25,11 @@ tags:
           <div class="row row--gutters-sm">
             {% for region in site.data.regions %}
             <div class="col col--2">
-              <div class="depth--sm rounded--md img img--1-1" style="background-image: url({{site.img}}/img.jpg);">
-                <a href="#search" class="img__link js-step-to-2"></a>
+              <div class="depth--sm rounded--md img img--16-9" style="background-image: url({{site.img}}/img.jpg);">
+                <a href="#search" class="img__link js-origin" data-origin="{{region.id}}"></a>
                 <div class="img__content">
                   <div class="boxpad--sm">
-                    <div class="h--xxs">{{region.name}}</div>
+                    <div class="p--xxl">{{region.name}}</div>
                   </div>
                 </div>
               </div>
@@ -52,18 +42,18 @@ tags:
 
 
 
-    <div id="step2" class="search__step search__step-distance js-step">
+    <div id="step-distance" class="search__step search__step-distance js-step" data-distance="">
       <div class="boxpad--lg text--center">
         <div class="step__title h h--lg">How far are you willing to travel?</div>
 
         <div class="distances">
-          <a class="distances__option distances__option-home js-step-to-3">
+          <a class="distances__option distances__option-home js-distance" data-distance="local">
             <div class="distances__label">Staying local</div>
           </a>
-          <a class="distances__option distances__option-short js-step-to-3">
-            <div class="distances__label">Short drive</div>
+          <a class="distances__option distances__option-short js-distance" data-distance="drive">
+            <div class="distances__label">Driving distance</div>
           </a>
-          <a class="distances__option distances__option-anywhere js-step-to-3">
+          <a class="distances__option distances__option-anywhere js-distance" data-distance="anywhere">
             <div class="distances__label">Anywhere</div>
           </a>
         </div>
@@ -72,18 +62,17 @@ tags:
 
 
 
-    <div id="step3" class="search__step search__step-interests js-step">
+    <div id="step-interests" class="search__step search__step-interests js-step">
       <div class="boxpad--lg">
         <div class="h h--md">What do you want out of your escape?</div>
         <div class="space--lg"></div>
 
-        <div class="row row--gutters-sm">
-          {% for tag in page.tags %}
+        <div class="row row--gutters-xs">
+          {% for tag in site.data.tags %}
           <div class="col col--4">
-            <div class="img img--1-1 depth--md-hover rounded--md" style="background-image: url({{site.img}}/img.jpg);">
-              <a href="javascript:void(0);" class="img__link"></a>
+            <div class="img img--1-1 depth--md-hover rounded--md interest js-map-filter" data-filter="{{tag.id}}" style="background-image: url({{site.img}}/img.jpg);">
               <div class="img__content">
-                <div class="h--xs">{{tag.name}}</div>
+                <div class="h--xxxs">{{tag.name}}</div>
               </div>
             </div>
           </div>
@@ -96,7 +85,10 @@ tags:
 
 
     <div class="search__surprise">
-      <p>Or would you rather a surprise? &nbsp;&nbsp;&nbsp; <a href="#" class="btn">Random secret</a></p>
+      <p>
+        <a href="#" class="btn js-search-reset">Start your search over</a>
+        <a href="#" class="btn">Random secret</a>
+      </p>
     </div>
 
   </div>

@@ -102,6 +102,8 @@
   // default gutters
   @include gutter-sizes($s2, $s4, $lg);
   &--gutters {
+    // xs gutters
+    &-xs { @include gutter-sizes($s0, $s0, $lg); }
     // small gutters
     &-sm { @include gutter-sizes($s0, $s2, $lg); }
     // large gutters

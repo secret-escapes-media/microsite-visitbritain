@@ -1,10 +1,47 @@
 
-- id: thing
+- id: scotland-thing
   editorial:
     name: Thing Name
-    description:
+    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
   location:
     name: Thing Place
-    region: southern-scotland
-    coordinates: -3.411780, 58.593683
+    country: scotland
+    coordinates: -3.169672, 56.204193
   tags: family, history,
+
+
+
+- id: scotland-thing2
+  editorial:
+    name: Thing Name
+    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+  location:
+    name: Thing Place
+    country: scotland
+    coordinates: -5.109735, 56.338013
+  tags: family, history,
+
+
+
+- id: scotland-thing3
+  editorial:
+    name: Thing Name
+    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+  location:
+    name: Thing Place
+    country: scotland
+    coordinates: -2.277967, 57.046025
+  tags: family, history,
+
+
+
+- id: scotland-thing2
+  editorial:
+    name: Thing Name
+    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+  location:
+    name: Thing Place
+    country: scotland
+    coordinates: -4.868734, 57.294274
+  tags: family, history,
+
