@@ -1,0 +1,18 @@
+
+- id: family
+  name: Family
+
+- id: history
+  name: History
+
+- id: beach
+  name: Beach
+
+- id: active
+  name: Active
+
+- id: country
+  name: Country
+
+- id: city
+  name: City

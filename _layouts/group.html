@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+<div class="container vpad--xxl text--center">
+  <p class="p--xxl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odit aliquam reprehenderit magni eius, esse quisquam minima inventore, adipisci excepturi. Quibusdam sequi eum labore vitae recusandae aliquam commodi, consectetur itaque.</p>
+</div>
+<div class="bg--white">
+  <div class="container">
+    <div class="row">
+      {% assign children = site.html_pages | where: 'group-parent', page.id %}
+      {% for child in children %}
+      <div class="col col--6">
+        <div class="img img--4-3 depth--md-hover rounded--md" style="background-image: url({{site.img}}/pages/{{child.id}}/nav.jpg);">
+          <a href="{{site.baseurl}}{{child.url}}" class="img__link"></a>
+          <div class="img__content">
+            <div class="h h--sm">{{child.title}}</div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

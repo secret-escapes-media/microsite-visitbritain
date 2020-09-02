@@ -1,0 +1,100 @@
+
+
+
+- id: minacks-theatre
+  editorial:
+    name: Minacks Theatre
+    description:
+  location:
+    name: Mousehole, Cornwall
+    region: southeast-england
+    coordinates: -5.402393, 50.110132
+  tags: family, history,
+
+
+
+- id: tintagel
+  editorial:
+    name: Tintagel
+    description:
+  location:
+    name: East Cornwall
+    region: southeast-england
+    coordinates: 1.0759556770324707, 51.362804670952464
+  tags: family, history,
+
+
+
+- id: beach1
+  editorial:
+    name: Beach1
+    description:
+  location:
+    name: Place
+    region: east-anglia
+    coordinates: 1.0659556770324707, 51.362804670952464
+  tags: beach, coast
+
+
+
+- id: walk1
+  editorial:
+    name: Walk1
+    description:
+  location:
+    name: Midlands place
+    region: west-midlands
+    coordinates: 1.763814, 52.529685
+  tags: active, country
+
+
+
+- id: pub1
+  editorial:
+    name: Pub1
+    description:
+  location:
+    name: Bournemouth
+    region: southeast-england
+    coordinates: 1.0459556770324707, 51.362804670952464
+  tags: food, family
+
+
+
+- id: pub2
+  editorial:
+    name: Pub2
+    description:
+  location:
+    name: Penzance
+    region: southeast-england
+    coordinates: 1.4259556770324707, 51.362804670952464
+  tags: food, family
+
+
+
+- id: shop1
+  editorial:
+    name: Shop1
+    description:
+  location:
+    name: St Ives
+    region: southwest-england
+    coordinates: 1.0359556770324707, 51.362804670952464
+  tags: shopping
+
+
+
+- id: escape1
+  editorial:
+    name: Escape1
+    description:
+  location:
+    name: Isle of Wight
+    region: southwest-england
+    coordinates: 1.1259556770324707, 51.362804670952464
+  tags: escape
+
+
+
+

@@ -1,0 +1,75 @@
+
+// gradient
+@mixin gradient($color1, $color2) { background: linear-gradient(180deg, $color1 12.52%, $color2 87.48%); }
+
+// sizes
+$scale-xs: 13px;
+$scale-sm: 14px;
+$scale-md: 15px;
+$scale-lg: 16px;
+$scale-xl: 17px;
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: $scale-md*1.25 $scale-md*2.5;
+  color: $white;
+  font-family: $sans;
+  font-weight: 600;
+  font-size: $scale-md;
+  line-height: $scale-md;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .1em;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: $primary;
+  @include gradient($primary,darken($primary,10));
+  &:hover, &:focus { background: darken($primary,10);}
+
+  // Styles
+  &--orange, &--primary {
+    background-color: $primary;
+    @include gradient($primary,darken($primary,10));
+    &:hover, &:focus { background: darken($primary,10);}
+  }
+  &--secondary {
+    background-color: $secondary-medium;
+    @include gradient($secondary-medium,darken($secondary-medium,8));
+    &:hover, &:focus { background: darken($secondary-medium,8);}
+  }
+  &--outline {
+    color: $grey-darkest;
+    background: transparent;
+    &:before {
+      // button border within original padding
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: inherit;
+      border-color: $primary;
+
+    }
+    &:hover, &:focus {
+      color: $white;
+      @include gradient($primary,$primary-dark);
+      &:before { border-color: $primary-dark; }
+    }
+  }
+
+  // Scale
+  &--xs { padding: $scale-xs*1.25 $scale-xs*2.5; font-size: $scale-xs; }
+  &--sm { padding: $scale-sm*1.25 $scale-sm*2.5; font-size: $scale-sm; }
+  &--lg { padding: $scale-lg*1.25 $scale-lg*2.5; font-size: $scale-lg; }
+  &--xl { padding: $scale-xl*1.25 $scale-xl*2.5; font-size: $scale-xl; }
+}

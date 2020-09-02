@@ -1,0 +1,48 @@
+---
+layout: page
+---
+
+<div class="container container--xxl vpad--xxl text--center">
+  {{page.intro}}
+</div>
+
+
+<div class="vpad--xxl bg--grey-lightest">
+
+  {% for group in page.groups %}
+  <div class="container">
+    <div class="h h--lg text--center">{{group.name}}</div>
+    <div class="space--xl"></div>
+
+    <div class="row">
+
+      {% for item in group.pois %}
+      {% assign poi = site.data.pois[page.id] | where: "id", item.id %}
+      {% for poi in poi %}
+
+        {% assign tags = poi.tags | split: ',' %}
+        <div class="col col--4">
+          <div class="img img--3-4" style="background-image: url({{site.img}}/img.jpg);">
+            <a href="javascript:void(0);" class="img__link js-open-modal" data-open-modal="{{poi.id}}"></a>
+            <div class="img__content">
+              <div class="boxpad--sm">
+                <div class="text--smallcaps">{{poi.location.name}}</div>
+                <div class="h h--sm">{{poi.editorial.name}}</div>
+                <hr class="hr--center">
+                <p>{% for tag in tags %}
+                  <span class="tag">{{tag}}</span>
+                {% endfor %}</p>
+              </div>
+            </div>
+            <div class="img__overlay"></div>
+          </div>
+        </div>
+
+      {% endfor %}
+      {% endfor %}
+
+    </div>
+  </div>
+  {% endfor %}
+
+</div>

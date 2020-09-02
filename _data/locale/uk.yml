@@ -1,0 +1,75 @@
+
+
+
+core-site: https://www.secretescapes.com/current-sales
+in-partnership: In partnership with
+
+header:
+  core-nav:
+    - link: https://www.secretescapes.com/current-sales
+      label: Current Sales
+    - link: https://www.secretescapes.com/refundable/filter
+      label: Refundable
+    - link: https://www.secretescapes.com/spa
+      label: Spa
+    - link: https://www.secretescapes.com/vouchers-offer
+      label: Gift vouchers
+  favourites:
+    link: https://www.secretescapes.com/my-favourites
+    label: My favourites
+
+footer:
+  social:
+    - link: http://www.facebook.com/SecretEscapes
+      id: facebook
+    - link: https://www.instagram.com/secretescapes/
+      id: instagram
+    - link: http://www.twitter.com/secret_escapes
+      id: twitter
+  nav-col-1:
+    title: Secret Escapes
+    links:
+      - link: https://www.secretescapes.com/about-us
+        label: About us
+      - link: https://www.secretescapes.com/contact
+        label: Contact
+      - link: https://www.secretescapes.com/uk/addyourhotel
+        label: Add your Hotel
+      - link: https://www.secretescapes.com/faq
+        label: FAQ
+      - link: https://www.secretescapes.com/bespoke-travel
+        label: Bespoke holidays
+      - link: https://www.secretescapes.com/flightFinder
+        label: Flight Finder
+      - link: https://www.secretescapes.com/vouchers-offer
+        label: Gift Vouchers
+      - link: https://www.secretescapes.com/how-it-works
+        label: How it works
+  nav-col-2:
+    title: Collections
+    links:
+      - link: https://www.secretescapes.com/spa/filter
+        label: Spa breaks
+      - link: https://www.secretescapes.com/city/filter
+        label: City breaks
+      - link: https://www.secretescapes.com/country/filter
+        label: Country breaks
+      - link: https://www.secretescapes.com/romantic/filter
+        label: Romantic breaks
+      - link: https://www.secretescapes.com/flights/filter
+        label: Holidays with flights
+      - link: https://www.secretescapes.com/all-inclusive/filter
+        label: All-Inclusive Holidays
+      - link: https://www.secretescapes.com/uk-country-under-99/filter
+        label: UK countryside under £99
+      - link: https://www.secretescapes.com/adults-only-escapes-holidays/filter
+        label: Adults-only Holidays
+  nav-col-3:
+    title:
+    links:
+      - link: https://www.secretescapes.com/terms-and-conditions
+        label: Terms and Conditions
+      - link: https://d1x3cbuht6sy0f.cloudfront.net/legal/slaveryStatement.pdf
+        label: Modern Slavery Statement
+      - link: https://www.secretescapes.com/privacy-policy
+        label: Privacy policy

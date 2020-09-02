@@ -1,0 +1,10 @@
+
+- id: thing
+  editorial:
+    name: Thing Name
+    description:
+  location:
+    name: Thing Place
+    region: southern-scotland
+    coordinates: -3.411780, 58.593683
+  tags: family, history,

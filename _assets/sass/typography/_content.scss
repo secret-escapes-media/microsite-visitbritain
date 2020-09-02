@@ -1,0 +1,92 @@
+// element styles for written content
+
+em      { font-style: italic; }
+strong  { font-weight: 600; }
+sup {
+  font-size: $s-1;
+  line-height: 0;
+  vertical-align: super;
+}
+
+// standard inline link style
+a[href]:not([class]) {
+  color: $primary;
+  @include transition;
+  &:hover { color: $primary-dark; }
+}
+
+li {
+  list-style-position:
+  outside; margin-left: $s1;
+}
+ul li   { list-style-type: disc; }
+ol li   { list-style-type: decimal; }
+
+hr, .hr {
+  border: 0;
+  height: 1px;
+  margin: $s1 0;
+  background-color: rgba($black,0.2);
+  &.theme--dark,
+  .theme--dark & { background-color: rgba($white,0.2); }
+}
+.hr {
+  &--center { width: 80px; margin-left: auto; margin-right: auto; }
+  &--left   { width: 80px; margin-right: auto; }
+  &--right  { width: 80px; margin-left: auto; }
+}
+
+// theme
+.theme {
+  &--light {
+    // light background, dark text
+    color: $grey-dark;
+    & .h, &.h { color: $grey-darker; }
+  }
+  &--dark {
+    // dark background, light text
+    color: $white;
+    & .h, &.h { color: $white; }
+  }
+}
+
+.text {
+  // styles
+  &--italic       { font-style: italic; }
+  &--light        { font-weight: 300; }
+  &--normal       { font-weight: 400; }
+  &--medium       { font-weight: 500; }
+  &--bold         { font-weight: 600; }
+  &--bolder       { font-weight: 700; }
+  &--boldest      { font-weight: 900; }
+  &--upper        { text-transform: uppercase; }
+
+  // kerning
+  &--wide        { letter-spacing: 0.05em; }
+  &--wider       { letter-spacing: 0.1em; }
+  &--widest      { letter-spacing: 0.15em; }
+
+  // alignment
+  &--left   { text-align: left; }
+  &--right  { text-align: right; }
+  &--center { text-align: center; }
+  @include bp($lg) {
+    &--bp-left   { text-align: left; }
+    &--bp-right  { text-align: right; }
+    &--bp-center { text-align: center; }
+  }
+
+  &--smallcaps {
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &--link {
+    font-weight: 600;
+    color: $primary;
+    &:hover { text-decoration: underline; }
+    &--underlined { text-decoration: underline; }
+  }
+}

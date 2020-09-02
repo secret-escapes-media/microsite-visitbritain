@@ -1,0 +1,47 @@
+// main footer for the microsite
+
+.site-footer {
+  position: relative;
+  background-color: $white;
+
+  &__wrap {
+    padding-top: $s6;
+    padding-bottom: $s6;
+    color: $grey-lightest;
+    font-weight: 400;
+    font-size: 90%;
+    background-color: $grey-darkest;
+    & a[href]:not([class]) { color: $grey-lightest; }
+    & hr {
+      background-color: $grey-dark;
+    }
+  }
+
+  &__partnership {
+    &-text {
+      display: none;
+      margin-right: $s0;
+    }
+    @include bp($lg) {
+      text-align: right;
+      &-text { display: inline-block; }
+    }
+  }
+
+  &__links {
+    & li {
+      margin: 0; list-style: none;
+      line-height: 16px;
+    }
+  }
+  &__social {
+    padding-top: 0 !important;
+    &-icon {
+      margin: 0; list-style: none;
+      width: 40px;
+      display: inline-block;
+      & + & { margin-left: $s0; }
+    }
+  }
+
+}

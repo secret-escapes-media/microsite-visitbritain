@@ -1,0 +1,95 @@
+---
+layout: default
+---
+
+{% include nav/header.html %}
+{% include nav/site.html %}
+
+
+
+<div class="bg--grey-lightest vpad--xxl">
+
+  <div class="container container--xxl text--center">
+    <div class="h h--xxl">{{page.title}}</div>
+    <div class="space--sm"></div>
+    <p class="p--xxl">{{page.intro}}</p>
+  </div>
+
+  <div class="vpad--xl">
+    <hr class="hr--center">
+  </div>
+
+  <div class="container">
+
+    <div class="h h--lg text--center">Select your prize!</div>
+    <p class="p--lg">That's right, we've produced six enviable British escape packages. Now it's up to you to choose which destination and hotel you want to win!</p>
+
+    <div class="space--xl"></div>
+    <div class="row">
+      {% for prize in page.prizes%}
+      <div class="col col--4">
+        <div class="card prize rounded--md depth--xs text--center">
+          <div class="boxpad--md">
+            <div class="text--smallcaps">Escape to</div>
+            <div class="h h--sm">{{prize.title}}</div>
+            <p>{{prize.description}}</p>
+          </div>
+          <div class="prize__hotel img img--4-3 rounded--md depth--sm" style="background-image: url('{{site.img}}/img.jpg');">
+            <div class="img__content">
+              <div class="boxpad--sm">
+                <div class="text--smallcaps">Stay at</div>
+                <div class="h h--xs">{{prize.hotel.title}}</div>
+                <div class="text--smallcaps">{{prize.hotel.location}}</div>
+              </div>
+            </div>
+          </div>
+          <div class="boxpad--md">
+            <a href="#entry-form" class="btn">Select this prize</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+
+<div class="vpad--xl">
+  <div class="container">
+    <div id="entry-form" class="vpad--md">
+      {% assign form = page.competition-form %}
+      <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
+        {% include form/messages.html %}
+        <div class="form__content width width--md">
+          {% for item in form.fields %}
+            <div class="form__input js-form-input">
+              {% case item.type %}
+                {% when 'text' %}
+                  {% include form/text.html data=item %}
+                {% when 'text-long' %}
+                  {% include form/text-long.html data=item %}
+                {% when 'email' %}
+                  {% include form/email.html data=item %}
+                {% when 'radio' %}
+                  {% include form/radio.html data=item %}
+                {% when 'checkbox' %}
+                  {% include form/checkbox.html data=item %}
+                {% when 'select' %}
+                  {% include form/select.html data=item %}
+              {% endcase %}
+            </div>
+          {% endfor %}
+          <div class="space--sm"></div>
+          <p class="text--sm text--normal">{{form.terms}}</p>
+          <div class="space--sm"></div>
+          <button type="submit" class="btn" disabled>{{form.submit}}</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% include nav/footer.html %}

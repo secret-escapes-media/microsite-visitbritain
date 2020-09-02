@@ -1,0 +1,21 @@
+
+- id: family
+  editorial:
+    name: Family
+    description:
+  location:
+    name: Thing Place
+    region: northern-ireland
+    coordinates: -7.917804, 54.435326
+  tags: family, history,
+
+
+- id: active
+  editorial:
+    name: Active
+    description:
+  location:
+    name: Thing Place
+    region: northern-ireland
+    coordinates: -7.917804, 54.435326
+  tags: active, history,

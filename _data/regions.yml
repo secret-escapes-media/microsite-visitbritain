@@ -1,0 +1,66 @@
+
+- id: southwest-england
+  name: Southwest England
+  description:
+  nearby: southeast-england, east-anglia
+
+- id: southeast-england
+  name: Southeast England
+  description:
+  nearby: southwest-england, east-anglia, east-midlands, west-midlands, south-wales
+
+- id: east-anglia
+  name: East Anglia
+  description:
+  nearby: southeast-england, east-midlands
+
+- id: west-midlands
+  name: West Midlands
+  description:
+  nearby: southeast-england, east-midlands, south-wales, north-wales, northwest-england
+
+- id: east-midlands
+  name: East Midlands
+  description:
+  nearby: east-anglia, southeast-england, west-midlands, yorkshire, northwest-england
+
+- id: south-wales
+  name: South Wales
+  description:
+  nearby: west-midlands, north-wales
+
+- id: north-wales
+  name: North Wales
+  description:
+  nearby: south-wales, west-midlands, northwest-england
+
+- id: northwest-england
+  name: Northwest England
+  description:
+  nearby: northeast-england, north-wales, west-midlands, yorkshire, east-midlands
+
+- id: northeast-england
+  name: Northeast England
+  description:
+  nearby: northwest-england, yorkshire
+
+- id: yorkshire
+  name: Yorkshire and the Humber
+  description:
+  nearby: northeast-england, northwest-england, east-midlands
+
+- id: southern-scotland
+  name: Southern Scotland
+  description:
+  nearby: northern-scotland, northeast-england, northwest-england
+
+- id: northern-scotland
+  name: Northern Scotland
+  description:
+  nearby: southern-scotland
+
+- id: northern-ireland
+  name: Northern Ireland
+  description:
+  nearby:
+
