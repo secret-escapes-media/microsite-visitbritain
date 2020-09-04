@@ -17,7 +17,7 @@ $(offerSections).each(function(){
   var limiter = offerSection.data('offer-limit') - 1;// -1 to balance against index number
 
   /*===== QUERY GOOGLE SHEET =====*/
-  var spreadsheetID = "14g1IiRy-0A3yFke6WRhvB_AOn_bNVESIDasUVcc93PM"; // ID of Google Spreadsheet
+  var spreadsheetID = "1ut5BkYwAYPNyRW-HzvoA2i5mJod1y5d54PMeUtL_0rA"; // ID of Google Spreadsheet
   var apiKey = "AIzaSyBww8fHIRizAYPWsYyNGcRvLvzTLvvKmkw"; // API key for accessing G Sheet
   var url = "https://sheets.googleapis.com/v4/spreadsheets/" + spreadsheetID + "/values/" + sheetName + "!A3:Z?&key=" + apiKey;
 

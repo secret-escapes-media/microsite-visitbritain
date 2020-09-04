@@ -32,7 +32,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: $grey-darkest;
+  background-color: #242424;
 }
 
 .search {
@@ -191,6 +191,12 @@
   border-radius: 50%;
   cursor: pointer;
   @include background-attributes;
+  &--se {
+    background-color: $black;
+    background-image: url('../img/logo/icon.svg');
+    background-size: 50%;
+    border: 2px solid $grey-dark;
+  }
 }
 
 
