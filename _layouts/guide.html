@@ -11,8 +11,8 @@ layout: page
 
   {% for group in page.groups %}
   <div class="container">
-    <div class="h h--lg text--center">{{group.name}}</div>
-    <div class="space--xl"></div>
+    <div class="h h--serif h--md">{{group.name}}</div>
+    <div class="space--md"></div>
 
     <div class="row">
 
@@ -21,17 +21,13 @@ layout: page
       {% for poi in poi %}
 
         {% assign tags = poi.tags | split: ',' %}
-        <div class="col col--4">
-          <div class="img img--3-4" style="background-image: url({{site.img}}/img.jpg);">
+        <div class="col col--3">
+          <div class="img img--3-4 img--grow rounded--md depth--md" style="background-image: url({{site.img}}/img.jpg);">
             <a href="javascript:void(0);" class="img__link js-open-modal" data-open-modal="{{poi.id}}"></a>
             <div class="img__content">
-              <div class="boxpad--sm">
-                <div class="text--smallcaps">{{poi.location.name}}</div>
-                <div class="h h--sm">{{poi.editorial.name}}</div>
-                <hr class="hr--center">
-                <p>{% for tag in tags %}
-                  <span class="tag">{{tag}}</span>
-                {% endfor %}</p>
+              <div class="boxpad--xxs theme--dark">
+                <div class="location">{{poi.location.name}}</div>
+                <div class="h h--xs">{{poi.editorial.name}}</div>
               </div>
             </div>
             <div class="img__overlay"></div>

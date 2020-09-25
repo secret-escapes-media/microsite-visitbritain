@@ -22,9 +22,6 @@
 
 
 
-
-
-
 /*=========================================
   Overview page
 */
@@ -32,73 +29,79 @@
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: #242424;
+  background-color: $black;
 }
-
 .search {
-  &__filter {
-    position: absolute;
-    z-index: $z-content-upper;
-    top: $s4; left: $s4;
-    background-color: $white;
-  }
 
   // Map fixed in the background
-  &__bg {
+  &__map {
     position: absolute;
     z-index: 0;
     top: 0; bottom: 0;
-    left: 33.33%; right: 0;
-  }
-
-  // Surprise me
-  &__surprise {
-    position: absolute;
-    bottom: 0;
-    left: 0; right: 0;
-    z-index: $z-content-upper;
-    background-color: rgba($black,0.5);
-    color: $white;
-    padding: $s2;
-    text-align: center;
+    left: 16.6667%; right: 0;
+    &:before {
+      content: "";
+      display: block;
+      z-index: 5;
+      pointer-events: none;
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 0;
+      width: 33.333%;
+      background: linear-gradient(90deg, rgba($black,1) 0%, rgba($black,0) 100%);
+    }
   }
 
   // Interface for searching
   &__window {
-    background-color: $white;
-    border-radius: 5px;
+    pointer-events: none;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba($black,0.2);
     position: absolute;
     z-index: $z-content-upper;
     top: $s4; bottom: $s4;
     left: $s4; right: $s4;
-    display: flex;
-    flex-direction: column;
     opacity: 1;
+    @include transition;
     &.loading { opacity: 0; }
-    .step-3 & {
-      right: 66.667%;
-    }
   }
 
-  // STEPS
+  // Steps
   &__step {
+    pointer-events: all;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba($black,0.2);
     width: 100%;
+    height: 100%;
     overflow: scroll;
     display: none;
+    justify-content: center;
+    align-items: center;
 
     // Where are you travelling from?
     &-origin {
-      .step-1 & { display: block; }
+      background-color: $black;
+      color: $white;
+      .step-1 & { display: flex; }
+      .origins {
+        &__option {
+          flex: 0 0 50%; max-width: 50%;
+          @include bp($lg) {
+            flex: 0 0 16.66%; max-width: 16.66%;
+          }
+          @include bp($xxl) {
+            flex: 0 0 20%; max-width: 20%;
+          }
+        }
+      }
     }
 
     // How far are you willing to travel
     &-distance {
-      .step-2 & { display: block; }
-
       background-color: $secondary-light;
+      background: linear-gradient(90deg, rgba($secondary-light,1) 0%, rgba($secondary,1) 100%);
+      color: $white;
       height: 100%;
+      .step-2 & { display: flex; }
       & .step__title { position: absolute; top: $s4; left: $s4; z-index: 10;}
       .distances {
         position: absolute;
@@ -108,12 +111,13 @@
         &__label {
           position: absolute;
           top: 50%;
-          right: $s6;
+          right: $s3;
           transform: translateY(-50%);
-          font-weight: 600;
+          font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 0.01rem;
-          font-size: $s1;
+          font-size: $s2;
+          text-align: left;
         }
         &__option {
           position: absolute;
@@ -130,13 +134,15 @@
           }
           &-home {
             z-index: 3;
-            background-color: $secondary-lightest;
+            background-color: $secondary-darkest;
+            background: linear-gradient(90deg, rgba($secondary-darker,1) 0%, rgba($secondary-darkest,1) 100%);
             width: 20%;
           }
           &-short {
             width: 50%;
             z-index: 2;
-            background-color: $secondary-lighter;
+            background-color: $secondary-dark;
+            background: linear-gradient(90deg, rgba($secondary-dark,1) 0%, rgba($secondary-darker,1) 100%);
           }
           &-anywhere {
             width: 100%;
@@ -149,13 +155,28 @@
 
     // What do you want out of your escape
     &-interests {
+      width: 33.333%;
+      background-color: transparent;
+      box-shadow: none;
+      color: $white;
       .step-3 & { display: block; }
 
       & .interest {
-        cursor: pointer;
-        display: block;
+        @include transition;
+        display: inline-block;
         border: 0;
-        &.active { border: 3px solid $primary; }
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: $s-2 $s1;
+        margin-right: $s-4;
+        margin-bottom: $s-4;
+        border: 1px solid rgba($white,0.2);
+        background-color: rgba($secondary-darkest,0.5);
+        &:hover {
+          background-color: $secondary-darkest;
+        }
+        &.active { background-color: $secondary; }
+        &.inactive { opacity: 0.5; }
       }
     }
   }
@@ -166,37 +187,40 @@
   width: 100%;
   height: 100%;
   & .marker { display: block; }
-  &.hide-family .marker--family { display: none; }
-  &.hide-beach .marker--beach { display: none; }
-  &.hide-coast .marker--coast { display: none; }
-  &.hide-city .marker--city { display: none; }
-  &.hide-history .marker--history { display: none; }
-  &.hide-country .marker--country { display: none; }
-  &.hide-active .marker--active { display: none; }
-  &.hide-escape .marker--escape { display: none; }
-  &.hide-food .marker--food { display: none; }
-  &.hide-relax .marker--relax { display: none; }
 }
 .mapboxgl-map {
   font-family: $sans !important;
-  font-size: 14px !important;
+  font-size: 15px !important;
 }
-.mapboxgl-popup-content { padding: 0 !important; }
-.mapboxgl-popup-close-button { z-index: 1; background-color: $white !important; }
+.mapboxgl-popup { z-index: $z-overlay; width: 420px; }
+.mapboxgl-popup-content { padding: 0 !important; overflow: hidden;}
+.mapboxgl-popup-close-button {
+  z-index: $z-overlay; background-color: $white !important;
+  height: 20px; width: 20px;
+  border-bottom-left-radius: 3px;
+}
 .mapboxgl-canvas:focus { outline: none; }
 
 .marker {
+  box-shadow: 0 1px 6px 0 rgba($black,0.3);
+  z-index: 2;
+  width: $s5;
+  height: $s5;
+  border-radius: 50%;
+  cursor: pointer;
+  @include background-attributes;
+}
+
+.se-marker {
+  box-shadow: 0 1px 6px 0 rgba($black,0.3);
+  z-index: 1;
   width: $s4;
   height: $s4;
   border-radius: 50%;
   cursor: pointer;
-  @include background-attributes;
-  &--se {
-    background-color: $black;
-    background-image: url('../img/logo/icon.svg');
-    background-size: 50%;
-    border: 2px solid $grey-dark;
-  }
+  background-color: $black;
+  background-image: url('../img/logo/icon.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
-

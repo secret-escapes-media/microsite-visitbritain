@@ -1,47 +1,119 @@
 
-- id: scotland-thing
+- id: north-coast-500
   editorial:
-    name: Thing Name
-    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    name: Ride the North Coast 500 in the Highlands
+    description: By car, bike or motorbike - the UK’s answer to Route 66 is a journey to the heart of Scotland. Starting and ending at Inverness Castle, take a week to ride this 516 mile tour of the breathtaking Scottish Coastline. Stopping off at the scenic towns of Ullapool, Durness, Dornoch and John O’Groats along the way, the North Coast 500 is the perfect opportunity to discover the heritage and culture along the outer rim of the Highlands. After all, it’s the ancient castles, glassy lochs, cosy inns, and friendly locals that make this Scottish road trip so iconic.
   location:
-    name: Thing Place
+    name: Scottish Highlands
     country: scotland
-    coordinates: -3.169672, 56.204193
-  tags: family, history,
+    coordinates: -5.30279, 58.16815
+  tags:
 
 
 
-- id: scotland-thing2
+- id: ski-in-the-glenshee
   editorial:
-    name: Thing Name
-    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    name: Ski in the Glenshee
+    description: With snow-packed conditions well into spring, the Glenshee Ski Centre is the perfect excuse to leave the city behind and take to the slopes. Ideal for first-timers and ‘black-run’ enthusiasts alike, the Glenshee boasts the largest and most varied ski slopes in the country; a series of snow-covered landscapes filled to the brim with natural steeps, sparse glades, and narrow gullies in the heart of the beautiful Cairngorms.
   location:
-    name: Thing Place
+    name: Glenshee Ski Centre, Scotland
     country: scotland
-    coordinates: -5.109735, 56.338013
-  tags: family, history,
+    coordinates: -3.41463, 56.88666
+  tags:
 
 
 
-- id: scotland-thing3
+- id: balnakeil-beach
   editorial:
-    name: Thing Name
-    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    name: Meet the cows of Balnakeil Beach
+    description: It’s hard to believe upon spying Balnakeil Beach that you’re still in Scotland. The long stretch of white sands, lapped by remarkably clear waters, offer a private sanctuary in this remote landscape. Private to a point – a large herd of black cows are typically found roaming the sands, cooling off in the gentle tide. Not a sight you’ll soon forget!
   location:
-    name: Thing Place
+    name: Scotland
     country: scotland
-    coordinates: -2.277967, 57.046025
-  tags: family, history,
+    coordinates: -4.76661, 58.57817
+  tags:
 
 
 
-- id: scotland-thing2
+- id: sea-kayak-the-summer-isles
   editorial:
-    name: Thing Name
-    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    name: Sea kayak the Summer Isles
+    description: This cluster of isolated islands lie just off the rocky shores of the coast, inviting those with an adventurous spirit. Glide across the sea on a kayak, heading for the private coves and far flung outposts that make up this wild archipelago. Norwest Sea Kayaking is the closest operator to the isles.
   location:
-    name: Thing Place
+    name: Summer Isles, Scotland
     country: scotland
-    coordinates: -4.868734, 57.294274
-  tags: family, history,
+    coordinates: -5.36351, 57.99766
+  tags:
+
+
+
+- id: hike-amongst-tumbling-waters
+  editorial:
+    name: Hike amongst tumbling waters
+    description: "Set off on a hike from Glen Brittle to this beguiling beauty spot in the shadow of the Black Cuillin Ridge: the Fairy Pools. Cascading waterfalls and enchanting pools dot the landscape, with magnificently clear waters. If you’re feeling brave, take a refreshing (with a capital R) dip, and marvel at this secluded outdoor hideaway."
+  location:
+    name: Fairy Pools, Scotland
+    country: scotland
+    coordinates: -6.25829, 57.25034
+  tags:
+
+
+
+- id: get-fittie-in-aberdeen
+  editorial:
+    name: Get Fittie in Aberdeen
+    description: Aberdeen is a wild and remote city, a place where riches are made and life is at the mercy of the tumultuous North Sea. Before the oil boom, fishing was the lifeblood of the community. Hidden in plain sight, this old way of life is laid out in the old-world alleys and nooks of Fittie, or Footdee. Missed by most visitors, this quirky community resides in the old fishermen’s housing, where a colourful collection of wooden outhouses and odd-fitting homesteads cluster around narrow streets. Now a rather crafty and artsy area, you’ll find a bunch of curious details adorning the homes and pavements, from folk art to zeitgeisty quips.
+  location:
+    name: Aberdeen, Scotland
+    country: scotland
+    coordinates: -2.09427, 57.14971
+  tags:
+
+
+
+- id: seafood-dining-in-oban-argyll
+  editorial:
+    name: Seafood dining in Oban, Argyll
+    description: Known as ‘little bay’ in Gaelic, the seemingly unremarkable fishing town of Oban is the seafood capital of Scotland. After a day of walking through the achingly-beautiful Argyll hillsides, discover an abundance of award-winning restaurants and eateries along the harbour, a collection of locally-sourced gems serving up the freshest of catches, before winding down with a glass of malt whiskey taken straight from the local distillery. With fresh air, fresh food and soul-stirring scenery wherever you look, the town is a gateway to rejuvenation.
+  location:
+    name: Oban, Scotland
+    country: scotland
+    coordinates: -5.47104, 56.41515
+  tags:
+
+
+
+- id: edinburgh
+  editorial:
+    name: Browse the street markets of Edinburgh
+    description: Indulge yourself once more at Edinburgh’s buzzing markets. Your first stop will be the charming Edinburgh Farmer’s Market on Castle Terrace. Beneath the shadow of the looming castle, this bustling market is stocked full of locally-sourced, seasonal produce - jams, chutneys, fresh cuts of meat; it’s a foodie’s paradise. Next on your market tour, hit the Greater Grassmarket for homegrown goodies and handcrafted gifts, before visiting the Stockbridge Market in the Jubilee Gardens, for exquisite street food, original artworks, and much else besides.
+  location:
+    name: Edinburgh, Scotland
+    country: scotland
+    coordinates: -3.18826, 55.95325
+  tags: city, shopping, food
+
+
+
+- id: dive-the-cathedral-in-st-abbs
+  editorial:
+    name: Dive The Cathedral in St Abbs
+    description: Head for this quaint port town on Scotland’s southeastern shores and discover an underwater landscape carved out by the wild North Sea. The clear waters around the town form part of a marine reserve that offers some of the best cold-water diving anywhere in Europe. From grey seals to the unfortunately ugly wolffish, discover a surprising aquatic world.
+  location:
+    name: St Abbs, Scotland
+    country: scotland
+    coordinates: -2.13851, 55.89892
+  tags: adventure, daring
+
+
+
+- id: taste-the-peat
+  editorial:
+    name: Taste the peat - a tipsy island tour of Islay
+    description: The Isle of Islay, also known by the affectionate moniker ‘Queen of the Hebrides’, harbours one of those iconic Scottish temptations - renowned whiskey. Your arrival proves as stirring as the tipples that await, with a network of ferry crossings darting around the beguiling isles off the mainland. Exploring Islay will typically revolve around discovering some of the greatest, peatiest whiskies in the world - one dram at a time.
+  location:
+    name: Islay, Scotland
+    country: scotland
+    coordinates: -6.17706, 55.73625
+  tags: food, 
 

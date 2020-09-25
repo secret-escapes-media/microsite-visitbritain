@@ -1,27 +1,61 @@
 
-- id: family
-  name: Family
+- id: art
+  name: Art & design
 
-- id: history
-  name: History
+- id: attractions
+  name: Landmarks & attractions
 
-- id: beach
-  name: Beach
+- id: food
+  name: Food & Drink
 
-- id: active
-  name: Active
+- id: shopping
+  name: Shopping
 
-- id: country
-  name: Country
+- id: outdoors
+  name: Great Outdoors
+
+- id: adventure
+  name: Adventure
+
+- id: daring
+  name: Daring
+
+- id: coast
+  name: Coast
 
 - id: city
   name: City
 
-- id: escape
-  name: Escape
+- id: photogenic
+  name: Photogenic
 
-- id: food
-  name: Food
+- id: history
+  name: History
 
-- id: relax
-  name: Relax
+- id: cultural
+  name: Culture
+
+- id: roadtrip
+  name: Road-trip
+
+- id: architecture
+  name: Architecture
+
+- id: wildlife
+  name: Wildlife
+
+- id: traditional
+  name: Traditional
+
+- id: walking
+  name: Walking
+
+- id: oddity
+  name: Oddity
+
+- id: learn
+  name: Learn something new
+
+- id: quiet
+  name: No crowds
+

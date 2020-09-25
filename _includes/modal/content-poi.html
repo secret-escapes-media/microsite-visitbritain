@@ -3,19 +3,20 @@
   <div class="img img--16-9" style="background-image: url('{{site.img}}/img.jpg');"></div>
   <div class="modal__content">
 
-    {% assign tags = modal.tags | split: ',' %}
-
-    <div class="text--smallcaps">{{modal.location.name}}</div>
-    <div class="h h--sm">{{modal.editorial.name}}</div>
-    <hr>
-    <p>Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. </p>
+    <div class="location p--xl">{{modal.location.name}}</div>
+    <div class="h h--md">{{modal.editorial.name}}</div>
+    <p>{{modal.editorial.description}}</p>
     <hr>
 
     <div class="row">
       <div class="col col--6">
         Great for:
+        {% assign tags = modal.tags | split: ', ' %}
         {% for tag in tags %}
-          <span class="tag">{{tag}}</span>
+          {% assign datatags = site.data.tags | where: "id", tag %}
+          {% for datatag in datatags %}
+            <span class="tag">{{datatag.name}}</span>
+          {% endfor %}
         {% endfor %}
       </div>
       <div class="col col--6">
@@ -24,17 +25,17 @@
     </div>
     <hr>
 
-    <div class="h h--xs">Related</div>
+    <div class="h h--xs">You might also like</div>
     <div class="space--sm"></div>
     <div class="row row--gutters-sm">
-      {% assign related = site.data.pois[page.id] | where: "location.region", modal.location.region %}
+      {% assign related = site.data.pois[page.id] | where: "location.country", modal.location.country %}
       {% for related in related limit: 4 %}
       {% unless related.id == modal.id %}
       <div class="col col--3">
-        <div class="img img--1-1" style="background-image: url({{site.img}}/img.jpg);">
+        <div class="img img--1-1 rounded--md depth--md" style="background-image: url({{site.img}}/img.jpg);">
           <a href="javascript:void(0);" class="img__link js-open-modal" data-open-modal="{{related.id}}"></a>
           <div class="img__content">
-            <p class="p--xxl">{{related.editorial.name}}</p>
+            <div class="h h--xxxs">{{related.editorial.name}}</div>
           </div>
           <div class="img__overlay"></div>
         </div>

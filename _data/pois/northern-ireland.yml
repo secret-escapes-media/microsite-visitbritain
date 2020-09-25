@@ -1,34 +1,58 @@
 
-- id: ni1
+- id: carrick-a-rede
   editorial:
-    name: Family
-    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    name: Wild Swimming in the Carrick-a-Rede, County Antrim
+    description: "Dive deep into the bracing waters of Larrybane Bay and swim across to the dramatic island of Carrick-a-Rede. Passing under the famous rope-bridge that connects the island to the mainland, this 1km swim is as visually compelling as it is challenging, with grass-topped cliffs, coastal caves and rocky outcrops to see on your crawl to the other side. Celebrate afterwards with a sea-view picnic, before heading to the seaside village of Cushendun for a quick tipple at Mary McBride’s, one of Ireland’s smallest pubs. For experienced swimmers only!"
   location:
-    name: Thing Place
+    name: County Antrim, Northern Ireland
     country: northern-ireland
-    coordinates: -7.965604, 54.407556
-  tags: family, history,
+    coordinates: -6.33249, 55.23953
+  tags: adventure, daring, quiet, outdoors
 
 
 
-- id: ni2
+- id: mountain-biking-in-castlewellan
   editorial:
-    name: Active
-    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    name: Mountain biking in Castlewellan
+    description: "Ride deep into the Castlewellan Forest Park: a magical woodland of ancient trees, stunning landscapes, and one of the most famous lakes in Northern Ireland. Visit for a weekend and test yourself on each of the five mountain biking trails on offer - with the wind on your face, scenery flashing by, and wheels whirring beneath you, you’ll get a true taste of the rugged Irish terrain. While here, make sure to visit the Peace Maze, a sprawling labyrinth of hedge rows erected to symbolise the end of the Troubles. Be warned, however: finding your way out is harder than it looks!"
   location:
-    name: Thing Place
+    name: County Down, Northern Ireland
     country: northern-ireland
-    coordinates: -5.868890, 54.505626
-  tags: active, history,
+    coordinates: -5.94182, 54.25799
+  tags: adventure, daring, quiet, outdoors
 
 
 
-- id: ni3
+- id: street-art-of-derry
   editorial:
-    name: Active
-    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    name: Tour the political street-art of Derry, Londonderry
+    description: "The series of murals decorating the buildings in the Bogside area of Derry shine a reflective light on the events of the Troubles; a moving testament to the sombre history of Ireland’s past. Appropriating the stark, journalistic imagery of the times, the murals depict the Battle of Bogside, Bloody Sunday, the 1981 hunger strike, and many others. For a more contemporary taste of Northern Irish art, head to the VOID gallery, or to the Centre for Contemporary Arts, a champion of up-and-coming, experimental artists."
   location:
-    name: Thing Place
+    name: Londonderry, Northern Ireland
     country: northern-ireland
-    coordinates: -6.507544, 55.178671
-  tags: active, history,
+    coordinates: -7.30857, 54.99661
+  tags: cultural, history, learn, city
+
+
+
+- id: causeway-coastal-route
+  editorial:
+    name: Causeway Coastal Route
+    description: "The magnificent northern reaches promise spectacular coastal exploits, as you skip between pretty coastal villages and discover beautiful natural wonders. Between Derry~Londonderry and Belfast, embark on a road trip that takes in the best of Northern Ireland’s wild outdoors. First up, The Gobbins Cliff Path. Suspended walkways see you trek next to the cliff face, offering glimpses at smugglers’ caves and quiet coves. Further along the coast, the romantic ruins of Dunluce Castle perch precariously on the headland; so precarious in fact, part of the kitchen fell into the sea. For a taste of proper Irish whiskey, stop off at the Old Bushmills Distillery, the country’s oldest working distillery. With your head a little lighter from that dram, the perfect opportunity to tackle the Carrick-a-Rede Rope Bridge presents itself. Slung between two crags, it’s a heady endeavour; but unmissable, nonetheless. And now for the routes namesake: the Giant’s Causeway. A Northern Irish icon, the hexagonal steps are a sight to behold. Filled with myths and legends, it’s the perfect finish to an adventure along Northern Ireland’s beguiling coastline."
+  location:
+    name: Northern Ireland
+    country: northern-ireland
+    coordinates: -6.3284, 55.22118
+  tags: roadtrip, photogenic, adventure
+
+
+
+- id: quarters-of-belfast
+  editorial:
+    name: Hop between the Quarters of Belfast
+    description: "The Titanic City is a lively hub that effortlessly mixes Victorian pomp, industrial edge and contemporary cool. A city of characters, its quarters each take on different personalities; the red-brick and cobbles of the Cathedral Quarter, the post-industrial, cultural revival of the Titanic Quarter, and the buzzing drinks and dining scene of the trendy Linen Quarter – to name a few. Each shows a side to the city that remains totally enthralling, all easily walkable, and combined making Belfast wonderfully good craic."
+  location:
+    name: Belfast, Northern Ireland
+    country: northern-ireland
+    coordinates: -5.93012, 54.59728
+  tags: history, learn, city, food, walking

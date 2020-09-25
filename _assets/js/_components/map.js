@@ -48,8 +48,8 @@ if( $('#map').length > 0 ){
         new mapboxgl.Marker(el)
           .setLngLat(marker.geometry.coordinates)
           .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-          .setMaxWidth('540px')
-          .setHTML('<div class="width width--sm theme--light"><div class="img img--16-9" style="background-image: url(_assets/img/img.jpg);"></div><div class="boxpad--sm"><h4 class="h h--xxxs text--bold">' + marker.properties.title + '</h4><p>' + marker.properties.description + '</p><p><a href="guides/'+marker.properties.country+'/?open-modal='+marker.properties.id+'" class="text--link">Read more</a></p></div>'))
+          .setMaxWidth('420px')
+          .setHTML('<div class="img img--16-9" style="background-image: url(_assets/img/img.jpg);"></div><div class="boxpad--sm text--center"><h4 class="h h--serif h--xxs text--bold">' + marker.properties.title + '</h4><div class="space--xxs"></div><a class="text--link p--lg" href="guides/'+marker.properties.country+'/?open-modal='+marker.properties.id+'" class="text--link">Read more</a>'))
           .addTo(map);
       });
 
@@ -110,24 +110,20 @@ if( $('#map').length > 0 ){
         delimiter: ','
       }, function (err, data) {
         map.on('load', function () {
-
-          //Add the the layer to the map
+          // add the layer to the map
           data.features.forEach(function(marker) {
             var el = document.createElement('a');
-            el.className = 'marker marker--se';
-
-            // make a marker for each feature and add to the map
+            el.className = 'se-marker';
             new mapboxgl.Marker(el)
               .setLngLat(marker.geometry.coordinates)
               .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-              .setMaxWidth('330px')
-              .setHTML('<div class="img img--16-9" style="background-image: url('+marker.properties.LeadImage+');"><a href="'+marker.properties.URL+'" class="img img__link"></a></div><div class="boxpad--sm"><div class="text--smallcaps">'+marker.properties.DestinationName+'</div><h4 class="h h--xxxs text--bold">' + marker.properties.SaleTitle + '</h4><div class="vpad--xs"><p>' + marker.properties.ReasonsToLove + '</p></div><a href="'+marker.properties.URL+'" class="btn btn--xs">View offer</a>'))
+              .setMaxWidth('420px')
+              .setHTML('<div class="img img--16-9" style="background-image: url('+marker.properties.LeadImage+');"><a href="'+marker.properties.URL+'" class="img img__link"></a></div><div class="boxpad--sm text--center"><div class="offer__location">'+marker.properties.DestinationName+'</div><h4 class="h h--serif h--xxxs text--bold">' + marker.properties.SaleTitle + '</h4><div class="space--xxs"></div><div>' + marker.properties.ReasonsToLove + '</div><div class="space--xs"></div><a href="'+marker.properties.URL+'" class="btn btn--xs">View offer</a>'))
               .addTo(map);
           });
-
         });
-
       });
-    };
-  });
-};
+    }; // end makeGeoJson
+
+  }); // end doc ready
+}; // end if #map

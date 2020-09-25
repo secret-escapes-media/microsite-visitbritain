@@ -1,6 +1,7 @@
 
 - id: southwest_england
   name: Southwest England
+  country: England
   coordinates:
     local:
       lat: "-5.711892, 50.048129"
@@ -11,6 +12,7 @@
 
 - id: southeast_england
   name: Southeast England
+  country: England
   coordinates:
     local:
       lat: "-1.890504, 50.560979"
@@ -21,6 +23,7 @@
 
 - id: east_anglia
   name: East Anglia
+  country: England
   coordinates:
     local:
       lat: "-0.544935, 51.401087"
@@ -31,6 +34,7 @@
 
 - id: west_midlands
   name: West Midlands
+  country: England
   coordinates:
     local:
       lat: "-2.824265, 51.897620"
@@ -41,6 +45,7 @@
 
 - id: east_midlands
   name: East Midlands
+  country: England
   coordinates:
     local:
       lat: "-1.008192, 52.023166"
@@ -49,28 +54,9 @@
       lat: "-2.158264, 51.457937"
       lng: "0.286644, 54.460081"
 
-- id: south_wales
-  name: South Wales
-  coordinates:
-    local:
-      lat: "-5.294824, 51.277178"
-      lng: "-2.672982, 52.576455"
-    drive:
-      lat: "-5.294824, 51.277178"
-      lng: "-2.496047, 53.447390"
-
-- id: north_wales
-  name: North Wales
-  coordinates:
-    local:
-      lat: "-4.458408, 52.488393"
-      lng: "-2.496047, 53.447390"
-    drive:
-      lat: "-5.294824, 51.277178"
-      lng: "-2.496047, 53.447390"
-
 - id: northwest_england
   name: Northwest England
+  country: England
   coordinates:
     local:
       lat: "-3.203784, 52.849297"
@@ -81,6 +67,7 @@
 
 - id: northeast_england
   name: Northeast England
+  country: England
   coordinates:
     local:
       lat: "-2.512132, 54.534810"
@@ -91,6 +78,7 @@
 
 - id: yorkshire
   name: Yorkshire and the Humber
+  country: England
   coordinates:
     local:
       lat: "-2.029585, 53.361087"
@@ -99,8 +87,31 @@
       lat: "-2.286943, 52.742313"
       lng: "-1.659631, 56.099693"
 
+- id: south_wales
+  name: South Wales
+  country: Wales
+  coordinates:
+    local:
+      lat: "-5.294824, 51.277178"
+      lng: "-2.672982, 52.576455"
+    drive:
+      lat: "-5.294824, 51.277178"
+      lng: "-2.496047, 53.447390"
+
+- id: north_wales
+  name: North Wales
+  country: Wales
+  coordinates:
+    local:
+      lat: "-4.458408, 52.488393"
+      lng: "-2.496047, 53.447390"
+    drive:
+      lat: "-5.294824, 51.277178"
+      lng: "-2.496047, 53.447390"
+
 - id: southern_scotland
   name: Southern Scotland
+  country: Scotland
   coordinates:
     local:
       lat: "-5.841712, 55.512126"
@@ -111,6 +122,7 @@
 
 - id: northern_scotland
   name: Northern Scotland
+  country: Scotland
   coordinates:
     local:
       lat: "-6.115155, 56.766684"
@@ -121,6 +133,7 @@
 
 - id: northern_ireland
   name: Northern Ireland
+  country: Northern Ireland
   coordinates:
     local:
       lat: "-8.157941, 54.103248"

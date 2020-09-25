@@ -1,59 +1,98 @@
 
-- id: wales1
+
+
+- id: take-a-coastal-trip-packed-with-history-in-north-wales
   editorial:
-    name: Thing Name
-    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    name: Take a coastal trip packed with history in North Wales
+    description: Where the piercing mountains of Snowdonia meet the sea, you’ll find a coastline of ravishing beauty. Visit the Italianate wonder of Portmeirion, explore the ancient walls of Harlech, Caernarfon and Conwy castles, or sink into a cosy cafe in Barmouth. Head for Bardsey Island, which fosters an incredible amount of history that belies its small size. The Llŷn Peninsula offers true hidden beauty, with a mix of Iron Age hill forts, abundant wildlife and quaint seaside towns like Aberdaron and Abersoch, ripe for exploring.
   location:
-    name: Thing Place
+    name:
     country: wales
-    coordinates: -4.977184, 51.744646
-  tags: family, history,
+    coordinates: -4.50407, 52.89621
+  tags: roadtrip, history, learn
 
 
 
-- id: wales2
+- id: llangollen-canal
   editorial:
-    name: Thing Name
-    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    name: Cruise on the Llangollen Canal
+    description: Hire a narrowboat and drift along this historic canal route. Starting in north-east Wales, navigate the twists and turns of the waterway before floating into the Shropshire countryside, making sure, of course, to pitstop at the various pubs on the way. The highlight of the trip will undoubtedly be the ‘stream in the sky’, the Pontcysyllte Aqueduct, a bridge over the River Dee that soars high above the valley. Expect some truly epic views (and a hit of adrenaline) as you cross to the other side.
   location:
-    name: Thing Place
+    name:
     country: wales
-    coordinates: -3.338374, 52.278650
-  tags: family, history,
+    coordinates: -3.1716, 52.97134
+  tags: adventure, outdoors, photogenic
 
 
 
-- id: wales3
+- id: surf-amongst-the-mountains-of-snowdonia
   editorial:
-    name: Thing Name
-    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    name: Surf amongst the mountains of Snowdonia
+    description: The last thing you’ll expect in the rugged landscape of Snowdonia is a dedicated surf spot. Having repurposed an old factory, Surf Snowdonia created an artificial freshwater lagoon with its very own wave machine. So hop on your board and ride the waves, in a truly unique setting.
   location:
-    name: Thing Place
+    name:
     country: wales
-    coordinates: -3.796277, 51.602664
-  tags: family, history,
+    coordinates: -3.83982, 53.18946
+  tags: adventure, oddity,
 
 
 
-- id: wales4
+- id: bodnant-welsh-food-centre
   editorial:
-    name: Thing Name
-    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    name: Stock up on Welsh produce at The Bodnant Welsh Food Centre
+    description: Consider yourself a foodie? You’ll be in seventh heaven at the Bodnant Welsh Food Centre. A cluster of old farmhouses have been converted into a culinary destination, where the finest produce of the region is handpicked for visiting foodies. Head for the Farm Shop, stocked with baked goods and cheeses made on-site, or sink into the cafe to taste some of the artisan wares that stock the shelves next door. This is your one-stop-shop as you adventure around the beautiful North Wales landscape.
   location:
-    name: Thing Place
+    name:
     country: wales
-    coordinates: -4.001128, 52.849981
-  tags: family, history,
+    coordinates: -3.80508, 53.23409
+  tags: food,
 
 
 
-- id: wales5
+- id: explore-waterfall-country-in-wales
   editorial:
-    name: Thing Name
-    description: Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    name: Explore Waterfall Country in Wales
+    description: There are some truly spectacular waterfalls in the Vale of Neath. The Hollywood starlet is Henrhyd Falls, as featured in the film Batman – yet the heart of this fascinating spot lies further east. Try the Four Falls Walk to see the best of the Vale of Neath. From the dramatic Sgwd Clun-Gwyn that cascades from one tier into the next, to the spellbinding Sgwd yr Eira curtain where you can actually walk behind the falls, Waterfall Country is a truly magical place.
   location:
-    name: Thing Place
+    name:
     country: wales
-    coordinates: -3.904727, 53.298819
-  tags: family, history,
+    coordinates: -3.65184, 51.72571
+  tags: outdoors, photogenic, walking
+
+
+
+- id: canyons-of-glynneath
+  editorial:
+    name: Splash around the canyons of Glynneath
+    description: Head for Glynneath in the beautiful Brecon Beacons for a spot of canyoning. The inland version of coasteering will see you spilling into wild waters, struggling upstream negotiating tricky outcrops, gorges, and a set of magnificent waterfalls. It’s a tough challenge which rewards at every turn – there’s no better way of experiencing the truly rugged nature of this wild landscape.
+  location:
+    name:
+    country: wales
+    coordinates: -3.61782, 51.74876
+  tags: walking, adventure, daring, outdoors
+
+
+
+- id: ceredigion-heritage-coast
+  editorial:
+    name: Explore the unspoilt beaches and coves of the Ceredigion Heritage Coast
+    description: 22 miles of unspoilt coastline is ready to be explored, along a beautiful stretch of mid-Wales. The designation ‘heritage coast’ marks and protects the coves and beaches, recognising their untouched qualities and conserving them. Walking trails tie the whole stretch together, with seaside towns like Abaereron, Aberystwyth and Cardigan making great stop-offs as you explore this beautiful coast.
+  location:
+    name:
+    country: wales
+    coordinates: -4.08379, 52.41656
+  tags: coast, roadtrip, photogenic
+
+
+
+- id: wye-valley
+  editorial:
+    name: Embark on a waterborne adventure in the Wye Valley
+    description: The Wye is a truly idyllic waterway that cuts from mid-Wales down to the Severn estuary. Hire a canoe from Wye Valley Canoes and discover the beauty of the valley. Half a day will see you gliding into Hay-on-Wye, a remarkable stop. Or, head south and discover Monmouth with a stopover. Tintern Abbey and Chepstow Castle sit on the river’s banks further downstream, as the river closes in on the Severn.
+  location:
+    name:
+    country: wales
+    coordinates: -2.63249, 51.83604
+  tags: adventure, outdoors, photogenic
+
 

@@ -38,4 +38,10 @@
     @include transition;
   }
   &:hover &__overlay { background-color: rgba($black,.6); }
+  &--grow {
+    transform: scale(1);
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 }

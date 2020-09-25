@@ -4,76 +4,45 @@ id: overview
 nav: true
 nav-order: 1
 title: Find your Escape
+
+banner:
+  content: >
+    <div class="container container--xxl boxpad--lg theme--dark text--center">
+      <div class="h h--display h--banner">Escape the Everyday</div>
+      <p class="p--xxl">Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Aenean lacinia.</p>
+      <div class="space--sm"></div>
+      <a href="#search" class="btn btn--white js-splash">Start now</a>
+    </div>
 ---
 
 
 {% include nav/header.html %}
-{% include nav/site.html %}
-
-<div class="search step-1" id="search">
-
-  <div class="search__window loading">
+{% include page/banner.html %}
 
 
+
+
+<div class="search" id="search">
+
+
+  <div class="search__window loading step-1">
 
     <div id="step-origin" class="search__step search__step-origin js-step is-active" data-origin="">
-      <div class="boxpad--lg text--center">
-        <div class="h h--lg">Let's find your secret escape</div>
-        <p class="p--xxl">Firstly, tell us where you're travelling from?</p>
+      <div class="container boxpad--lg text--center">
+        <div class="h h--display h--xxl">Where are you travelling from?</div>
 
-        <div class="vpad--lg">
-          <div class="row row--gutters-sm">
-            {% for region in site.data.regions %}
-            <div class="col col--2">
-              <div class="depth--sm rounded--md img img--16-9" style="background-image: url({{site.img}}/img.jpg);">
-                <a href="#search" class="img__link js-origin" data-origin="{{region.id}}"></a>
-                <div class="img__content">
-                  <div class="boxpad--sm">
-                    <div class="p--xxl">{{region.name}}</div>
-                  </div>
+        <div class="space--lg"></div>
+        <div class="row row--gutters-sm origins">
+          {% for region in site.data.regions %}
+          <div class="col origins__option">
+            <div class="depth--sm rounded--md img img--16-9" style="background-image: url({{site.img}}/regions/{{region.id}}.jpg);">
+              <a href="#search" class="img__link js-origin" data-origin="{{region.id}}" data-origin-country="{{region.country}}"></a>
+              <div class="img__content">
+                <div class="boxpad--sm">
+                  <div class="h h--xxxs text--bold text--upper">{{region.name}}</div>
                 </div>
               </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div id="step-distance" class="search__step search__step-distance js-step" data-distance="">
-      <div class="boxpad--lg text--center">
-        <div class="step__title h h--lg">How far are you willing to travel?</div>
-
-        <div class="distances">
-          <a class="distances__option distances__option-home js-distance" data-distance="local">
-            <div class="distances__label">Staying local</div>
-          </a>
-          <a class="distances__option distances__option-short js-distance" data-distance="drive">
-            <div class="distances__label">Driving distance</div>
-          </a>
-          <a class="distances__option distances__option-anywhere js-distance" data-distance="anywhere">
-            <div class="distances__label">Anywhere</div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div id="step-interests" class="search__step search__step-interests js-step">
-      <div class="boxpad--lg">
-        <div class="h h--md">What do you want out of your escape?</div>
-        <div class="space--lg"></div>
-
-        <div class="row row--gutters-xs">
-          {% for tag in site.data.tags %}
-          <div class="col col--4">
-            <div class="img img--1-1 depth--md-hover rounded--md interest js-map-filter" data-filter="{{tag.id}}" style="background-image: url({{site.img}}/img.jpg);">
-              <div class="img__content">
-                <div class="h--xxxs">{{tag.name}}</div>
-              </div>
+              <div class="img__overlay"></div>
             </div>
           </div>
           {% endfor %}
@@ -84,16 +53,50 @@ title: Find your Escape
 
 
 
-    <div class="search__surprise">
-      <p>
-        <a href="#" class="btn js-search-reset">Start your search over</a>
-        <a href="#" class="btn">Random secret</a>
-      </p>
+    <div id="step-distance" class="search__step search__step-distance js-step" data-distance="">
+      <div class="boxpad--lg text--center">
+        <div class="step__title h h--display h--xxl">How far are you willing to travel?</div>
+
+        <div class="distances">
+          <a href="javascript:void(0);" class="distances__option distances__option-home js-distance" data-distance="local">
+            <div class="distances__label">Staying local</div>
+          </a>
+          <a href="javascript:void(0);" class="distances__option distances__option-short js-distance" data-distance="drive">
+            <div class="distances__label">Driving distance</div>
+          </a>
+          <a href="javascript:void(0);" class="distances__option distances__option-anywhere js-distance" data-distance="anywhere">
+            <div class="distances__label">Anywhere</div>
+          </a>
+        </div>
+      </div>
     </div>
+
+
+
+    <div id="step-interests" class="search__step search__step-interests js-step">
+      <div class="boxpad--lg">
+        <div class="h h--display h--xl">Choose what matters most to you</div>
+        <div class="space--lg"></div>
+
+        {% for tag in site.data.tags %}
+        <a href="javascript:void(0);" class="depth--md-hover rounded--md interest js-map-filter" data-filter="{{tag.id}}">
+          {{tag.name}}
+        </a>
+        {% endfor %}
+
+        <div class="vpad--lg">
+          <a href="{{site.baseurl}}/guides/" class="btn btn--sm js-explore-country">Explore more</a>
+          <a href="#search" class="btn btn--sm js-search-reset">Start over</a>
+        </div>
+
+      </div>
+    </div>
+
+
 
   </div>
 
-  <div class="search__bg">
+  <div class="search__map">
     {% include page/map.html %}
   </div>
 </div>

@@ -1,5 +1,27 @@
 // these are the core typeface families
 
-$sans:    'Source Sans Pro', 'Helvetica Neue', sans-serif;
-$serif:   'Source Serif Pro', Georgia, serif;
-$display: 'Source Serif Pro', Georgia, serif;
+@font-face {
+  font-family: "Better Times Alt";
+  src: local("Better Times Alt"), local("BetterTimesAlt"),
+    url("../fonts/BetterTimesAlt.woff2") format("woff2"),
+    url("../fonts/BetterTimesAlt.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Better Times";
+  src: local("Better Times"), local("BetterTimes"),
+    url("../fonts/BetterTimes.woff2") format("woff2"),
+    url("../fonts/BetterTimes.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$sans:     'Source Sans Pro', 'Helvetica Neue', sans-serif;
+$serif:    'Source Serif Pro', Georgia, serif;
+$title:    'Montserrat', 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+$display:  'Better Times', 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+$display2: "Better Times Alt", 'Source Sans Pro', 'Helvetica Neue', sans-serif;

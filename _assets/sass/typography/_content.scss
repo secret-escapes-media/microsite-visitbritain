@@ -36,6 +36,25 @@ hr, .hr {
   &--right  { width: 80px; margin-left: auto; }
 }
 
+.location{
+  margin-bottom: $s-4;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 13px;
+    width: 9px;
+    margin-right: .4em;
+    margin-bottom: .25em;
+    vertical-align: middle;
+    background-image: url( "../img/icons/location.svg" );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: contain;
+    .theme--dark & { background-image: url( "../img/icons/location-wh.svg" ); }
+  }
+}
+
 // theme
 .theme {
   &--light {
