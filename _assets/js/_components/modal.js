@@ -58,6 +58,10 @@ function modalClose(event){
 
 // launches modal when offer is clicked
 modalLaunchBtn.on('click', function(event) {
+  if( modal.hasClass('is-open') ){
+    console.log('modal is open, close current modal item');
+    $('.modal.is-open').removeClass('is-open').addClass('is-closed');
+  }
   modalOpen(event);
 });
 
