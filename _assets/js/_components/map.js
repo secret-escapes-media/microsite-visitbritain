@@ -31,7 +31,7 @@ if( $('#map').length > 0 ){
       container: 'map',
       style: 'mapbox://styles/hamishjgray/ckek0njfp0psd1ar0a7f23v11',
       logoPosition: 'bottom-right',
-      // interactive: false,
+      interactive: false,
       zoom: 7,
       center: [-2.6986074,54.4651411]
     });
@@ -42,24 +42,23 @@ if( $('#map').length > 0 ){
       geojson.features.forEach(function(marker) {
         var el = document.createElement('a');
         el.className = 'marker js-open-modal marker--'+marker.properties.tag;
-        el.setAttribute("style", "background-image: url('_assets/img/img.jpg')");
+        el.setAttribute("style", "background-image: url('_assets/img/pois/" + marker.properties.id + ".jpg')");
 
           // make a marker for each feature and add to the map
         new mapboxgl.Marker(el)
           .setLngLat(marker.geometry.coordinates)
           .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
           .setMaxWidth('420px')
-          .setHTML('<div class="img img--16-9" style="background-image: url(_assets/img/img.jpg);"></div><div class="boxpad--sm text--center"><h4 class="h h--serif h--xxs text--bold">' + marker.properties.title + '</h4><div class="space--xxs"></div><a class="text--link p--lg" href="guides/'+marker.properties.country+'/?open-modal='+marker.properties.id+'" class="text--link">Read more</a>'))
+          .setHTML('<div class="img img--16-9" style="background-image: url(_assets/img/pois/' + marker.properties.id + '.jpg);"><a href="guides/'+marker.properties.country+'/?open-modal='+marker.properties.id+'" class="img__link"></a></div><div class="boxpad--sm text--center"><h4 class="h h--serif h--xxxs text--bold">' + marker.properties.title + '</h4><div class="space--xxs"></div><div>' + marker.properties.description + ' <a class="text--link" href="guides/'+marker.properties.country+'/?open-modal='+marker.properties.id+'" class="text--link">Read more</a></div>'))
           .addTo(map);
       });
 
-      ///////////// center the map markers within the viewport
-      var bounds = new mapboxgl.LngLatBounds();
+      ///////////// set map to contain the UK as default
       function getMapBounds() {
-        geojson.features.forEach(function(feature) {
-          bounds.extend(feature.geometry.coordinates);
-        });
-        map.fitBounds(bounds, {padding: 30}); // adds padding so markers aren't on edge
+        map.fitBounds([
+          coords["default"]["lat"],
+          coords["default"]["lng"]
+        ], {padding: 30}); // adds padding
       }
       getMapBounds(); // resets the view when the map loads
       windowResize(getMapBounds); // resets the view after the viewport has finished resizing

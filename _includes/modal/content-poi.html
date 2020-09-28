@@ -1,6 +1,19 @@
-<div class="width width--xxl modal modal--poi is-closed" data-modal-id="{{modal.id}}">
+<div class="width width--xxl modal modal--poi is-closed" data-modal-id="{{modal.id}}" data-modal-group="{{modal.group}}">
   <div class="js-close-modal modal__close"></div>
-  <div class="img img--16-9" style="background-image: url('{{site.img}}/img.jpg');"></div>
+  <div class="js-modal-nav modal__nav modal__nav--next" data-nav-direction="next"></div>
+  <div class="js-modal-nav modal__nav modal__nav--previous" data-nav-direction="previous"></div>
+
+  <div class="img img--16-9" style="background-image: url('{{site.img}}/pois/{{modal.id}}.jpg');">
+    <div class="img__tags">
+      {% assign tags = poi.tags | split: ', ' %}
+      {% for tag in tags %}
+        {% assign datatags = site.data.tags | where: "id", tag %}
+        {% for datatag in datatags %}
+          <span class="tag">{{datatag.name}}</span>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
   <div class="modal__content">
 
     <div class="location p--xl">{{modal.location.name}}</div>
@@ -23,12 +36,13 @@
         When to go: September-October
       </div>
     </div>
-    <hr>
 
+    {% if modal.group %}
+    <hr>
     <div class="h h--xs">You might also like</div>
     <div class="space--sm"></div>
     <div class="row row--gutters-sm">
-      {% assign related = site.data.pois[page.id] | where: "location.country", modal.location.country %}
+      {% assign related = site.data.pois[page.id] | where: "group", modal.group %}
       {% for related in related limit: 4 %}
       {% unless related.id == modal.id %}
       <div class="col col--3">
@@ -43,6 +57,7 @@
       {% endunless %}
       {% endfor %}
     </div>
+    {% endif %}
 
   </div>
 </div>

@@ -2,43 +2,32 @@
 layout: page
 ---
 
-<div class="container container--xxl vpad--xxl text--center">
-  {{page.intro}}
+<div class="bg--grey-darkest theme--dark">
+  <div class="container container--xxl text--center">
+    <p class="p--xxxl">{{page.intro}}</p>
+    <div class="space--xxl"></div>
+  </div>
 </div>
 
 
-<div class="vpad--xxl bg--grey-lightest">
+{% for section in page.sections %}
+<div class="guide__section">
+  {% if section.type == 'popups' %}
+    {% include sections/popups.html %}
+  {% elsif section.type == 'features' %}
+    {% include sections/features.html %}
+  {% elsif section.type == 'two-col' %}
+    {% include sections/two-col.html %}
+  {% endif %}
+</div>
+{% endfor %}
 
-  {% for group in page.groups %}
+<div class="space--xxl"></div>
+<div class="bg--grey-lightest vpad--xxl">
   <div class="container">
-    <div class="h h--serif h--md">{{group.name}}</div>
-    <div class="space--md"></div>
-
-    <div class="row">
-
-      {% for item in group.pois %}
-      {% assign poi = site.data.pois[page.id] | where: "id", item.id %}
-      {% for poi in poi %}
-
-        {% assign tags = poi.tags | split: ',' %}
-        <div class="col col--3">
-          <div class="img img--3-4 img--grow rounded--md depth--md" style="background-image: url({{site.img}}/img.jpg);">
-            <a href="javascript:void(0);" class="img__link js-open-modal" data-open-modal="{{poi.id}}"></a>
-            <div class="img__content">
-              <div class="boxpad--xxs theme--dark">
-                <div class="location">{{poi.location.name}}</div>
-                <div class="h h--xs">{{poi.editorial.name}}</div>
-              </div>
-            </div>
-            <div class="img__overlay"></div>
-          </div>
-        </div>
-
-      {% endfor %}
-      {% endfor %}
-
-    </div>
+    <div class="h h--md">{{page.title}} Travel Offers</div>
+    <div class="space--lg"></div>
+    {% include offer/all-offers-dynamic.html sheet=page.title limit="20" %}
   </div>
-  {% endfor %}
 
 </div>

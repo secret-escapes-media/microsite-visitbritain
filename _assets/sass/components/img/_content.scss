@@ -24,7 +24,7 @@
     justify-content: center;
     color: $white;
     text-align: center;
-    @include page-padding;
+    padding: 0 $s0;
     & hr { background-color: rgba($white,0.2); }
   }
   &__overlay {
@@ -36,6 +36,12 @@
     z-index: $z-content;
     background-color: rgba($black,.4);
     @include transition;
+  }
+  &__tags {
+    position: absolute;
+    top: $s0; left: $s0;
+    z-index: $z-content;
+
   }
   &:hover &__overlay { background-color: rgba($black,.6); }
   &--grow {

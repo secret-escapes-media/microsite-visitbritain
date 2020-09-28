@@ -1,0 +1,33 @@
+
+<div class="container">
+  {% if section.name %}
+  <div class="h h--md">{{section.name}}</div>
+  <div class="space--lg"></div>
+  {% endif %}
+
+  <div class="row">
+
+    {% for item in section.pois %}
+    {% assign poi = site.data.pois[page.id] | where: "id", item.id %}
+    {% assign poicols = 12 | divided_by: section.pois.size %}
+    {% for poi in poi %}
+
+      {% assign tags = poi.tags | split: ',' %}
+      <div class="col col--{{poicols}}">
+        <div class="img img--3-4 img--grow rounded--md depth--md theme--dark" style="background-image: url({{site.img}}/pois/{{poi.id}}.jpg);">
+          <a href="javascript:void(0);" class="img__link js-open-modal" data-open-modal="{{poi.id}}"></a>
+          <div class="img__content">
+            <div>
+              <div class="location">{{poi.location.name}}</div>
+              <div class="h h--xxs">{{poi.editorial.name}}</div>
+            </div>
+          </div>
+          <div class="img__overlay"></div>
+        </div>
+      </div>
+
+    {% endfor %}
+    {% endfor %}
+
+  </div>
+</div>

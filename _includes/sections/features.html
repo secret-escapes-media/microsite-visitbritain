@@ -1,0 +1,38 @@
+
+<div class="container">
+  {% if section.name %}
+  <div class="h h--md">{{section.name}}</div>
+  <div class="space--md"></div>
+  {% endif %}
+
+  {% for item in section.pois %}
+  <div class="bob{% cycle '', ' bob--swap'%}">
+  {% assign poi = site.data.pois[page.id] | where: "id", item.id %}
+  {% for poi in poi %}
+
+    <div class="bob__img">
+      <div class="img img--4-3" style="background-image: url({{site.img}}/pois/{{poi.id}}.jpg);">
+        <div class="img__tags">
+          {% assign tags = poi.tags | split: ', ' %}
+          {% for tag in tags %}
+            {% assign datatags = site.data.tags | where: "id", tag %}
+            {% for datatag in datatags %}
+              <span class="tag">{{datatag.name}}</span>
+            {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div class="bob__text">
+      <div class="location">{{poi.location.name}}</div>
+      <div class="h h--sm">{{poi.editorial.name}}</div>
+      <p>{{poi.editorial.description}}</p>
+    </div>
+
+  {% endfor %}
+  </div>
+  {% endfor %}
+
+</div>
+

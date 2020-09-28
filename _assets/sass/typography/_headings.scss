@@ -51,9 +51,10 @@
 
 .h--banner {
   // custom banner headline
-  font-family: $display2;
+  font-family: $display;
   line-height: 1.1;
   font-size: $s6;
+  text-transform: uppercase;
   @include bp($md){ font-size: $s8; }
   @include bp($xl){ font-size: $s12; }
 }

@@ -18,7 +18,7 @@
     name: Castle, cathedral and country in Durham
     description: Durham is a wonderfully-historic outpost in the heart of England’s North East. Winding cobbled streets lead down to the river, where the ebb and flow of Durhamites and visitors throng the quaint shops, tearooms and historic pubs of the city’s ancient high streets. All this, in the shadow of Britain’s finest Romanesque Cathedral, which towers over the city drawing visitors to delight at its lofty interior. Don’t miss the stolen remains of the venerable Bede, before heading to that other stone fortress, Durham Castle. Now a university hall, it shelters wonders like the Norman chapel and Black Staircase. Just outside of the city, country delights like Raby Castle and the Durham Heritage Coast tempt visitors away, only to return for dinner in one of Durham’s fine restaurants.
   location:
-    name:
+    name: Durham, England
     country: england
     coordinates: -1.58485, 54.77525
   tags: cultural, history, architecture
@@ -30,7 +30,7 @@
     name: Discover the smokehouse of Craster
     description: This secluded fishing village is every bit picture-perfect. Cottages and fishing boats are haphazardly slung along the shoreline, all facing the small harbour and its thick walls. Yet this most unassuming place is responsible for one of Britain’s most cherished maritime delicacies - kippers. Craster Kippers, which grace the breakfast table of the Queen often enough, are still smoked here in the traditional way - a centuries-old tradition that you too, can relish in.
   location:
-    name:
+    name: Craster, England
     country: england
     coordinates: -1.59332, 55.47213
   tags: cultural, history, photogenic, city, food
@@ -42,7 +42,7 @@
     name: Dodge the thundering Tees in the North Pennines
     description: As you wind through the rolling valleys and steep cliffs of the Northern Pennines, don’t miss this dramatic beauty spot. Aptly named High Force, discover a waterfall that thunders off its rocky ledge, sending spray high into the air. It’s a scene full of atmosphere, with the sound of crashing waters as your soundtrack.
   location:
-    name:
+    name: North Pennines, England
     country: england
     coordinates: -2.23159, 54.75992
   tags: outdoors, photogenic
@@ -51,10 +51,10 @@
 
 - id: morecambe-bay
   editorial:
-    name: Guided Walking over Morecambe Bay, Lancashire
+    name: Guided Walking over Morecambe Bay
     description: Morecambe Bay is the largest expanse of mudflats in the UK, a dramatic seascape of sand and water, overlooked by the mountains of the Lake District. Take a sponsored walk with the Guide Over Sands Trust, a charity providing guides for a safe passage over the estuary - a means of experiencing the Bay’s spectacular sand-spread vistas while raising money for a worthy cause. Setting off from Arnside, the walk will lead you to the village of Kent’s Bank at the foot of the magnificent Lake District.
   location:
-    name:
+    name: Morecambe Bay, Lancashire
     country: england
     coordinates: -2.85941, 54.08402
   tags: outdoors, coast, photogenic, quiet
@@ -66,7 +66,7 @@
     name: Vertigo climbs at Honister Slate Mine
     description: Buried deep into one of the Lakeland’s dramatic fells, this old slate mine is now a hive of activities for little and big adventures alike. From heritage trails that take you deep into the mines, to climbing the head-spinning Via Ferrata – the old trail the miners would use that scales the side of the cliff – Honister promises intrepid adventure and dizzying heights.
   location:
-    name:
+    name: Lake District, England
     country: england
     coordinates: -3.19925, 54.51125
   tags: adventure, daring, outdoors
@@ -78,7 +78,7 @@
     name: Spy a red squirrel in Whinlatter Forest Park
     description: England's only mountain forest, a beautiful and rare sight, is not to be missed when in the Lake District. It’s a red squirrel sanctuary, perfect for chance encounters with rare wildlife darting around the forest. Long walks under thick canopies are one thing, but Whinlatter is also home to the Go Ape treetop assault course and excellent mountain bike routes with bike hire available from Cyclewise.
   location:
-    name:
+    name: Whinlatter Forest Park, Keswick, Lake District, England
     country: england
     coordinates: -3.22916, 54.60935
   tags: outdoors, walking, quiet
@@ -90,7 +90,7 @@
     name: Try Sarah’s Gingerbread before your Lakeland hike
     description: An authentic Lakeland ramble is nothing without two vital things – Kendal Mint Cake and a slab of Grasmere Gingerbread. A delicacy invented here in 1854, the current shop, Grasmere GIngerbread, still occupies the cottage where Sarah Nelson sold her sweet treats to Victorian hikers and ramblers.
   location:
-    name:
+    name: Grasmere, Lake District, England
     country: england
     coordinates: -3.02362, 54.45793
   tags: food, walking, outdoors
@@ -102,10 +102,10 @@
     name: Discover subterranean Liverpool
     description: Mersey powerhouse Liverpool is known as a hotbed of culture, a bastion of the arts, a characterful city that is set to welcome all visitors with open arms and show them a darn good time. Yet little known, and little-welcoming depending on your disposition, are the subterranean tunnels that run beneath the city streets. The Williamson Tunnels were long forgotten for 200 years, until a local group started digging down into the cavernous and rubble filled spaces. Built by the tobacco trader Joseph Williamson, no one is quite sure what their purpose was. Rumours of an end-of-days cult abound, though you’ll have to make your own mind up as you explore the vast underground network.
   location:
-    name:
+    name: Liverpool, England
     country: england
     coordinates: -2.99157, 53.40837
-  tags: city, oddity
+  tags: city, oddity, art
 
 
 
@@ -114,7 +114,7 @@
     name: Stargazing in the Yorkshire Dales
     description: By day the Yorkshire Dales National Park is a grassy wonderland of sweeping landscapes and rolling hills; by night it plays host to a glimmering sky of soul-stirring constellations. As the sun begins to set over the heather moorlands, take a hike to one of the park’s star discovery sites - the Hawes centre, Malham centre, the Buckden car park, or the Tan Hill Inn, otherwise known as the ‘highest pub in Britain’ - where the high-altitude, open landscapes provide spine-tingling panoramic views of the Northern Hemisphere. On a clear night, you might even catch a glimpse of the Milky Way…
   location:
-    name:
+    name: Yorkshire Dales, England
     country: england
     coordinates: -2.1632, 54.19626
   tags: outdoors, quiet
@@ -126,7 +126,7 @@
     name: Reset in Robin Hood’s Bay
     description: Yorkshire’s coastline has its fair share of traditional seaside towns, with their arcades, promenades and bucket-and-spade traditionalism. Robin Hood’s Bay is not one of them. This petite fishing village retains an untouched beauty, one of narrow, cobbled streets lined with ship captains’ ivy-clad cottages, throwback tearooms and artist studios. And no surprise artists flock here; the view of the bay is a rare glimpse into a time gone past, where life was governed by the churning North Sea. A true seaside idyll.
   location:
-    name:
+    name: Yorkshire, England
     country: england
     coordinates: -0.535, 54.43435,
   tags: outdoors, quiet, coast
@@ -138,7 +138,7 @@
     name: Let art dwarf you at Yorkshire Sculpture Park
     description: Not the first thing you would expect to find in the pastoral prettiness of Yorkshire, this one-of-a-kind park is a hub for modern and contemporary art set in the grounds of a historic estate. British and international artists are represented here, with famous works like Barbara Hepworth’s Family of Man and more by Henry Moore and Damien Hirst displayed - sometimes towering over - the grassy lawns of the property.
   location:
-    name:
+    name: Yorkshire, England
     country: england
     coordinates: -1.56943, 53.61397
   tags: art, photogenic
@@ -150,7 +150,7 @@
     name: Unpick the art trail at Salts Mill
     description: Just outside Bradford is the pretty village of Saltaire, a warm sandstone monument to industrial philanthropy and idealistic industrialism. Its history is fascinating, and available to learn about in the old mill buildings; yet the vast mills are also filled with boutique shopping and bars and cafes, a cultural hub on the edge of the city. Even better, it’s one of the best places to see the works of David Hockney, not just by virtue of the fact it’s one of the biggest collections, nor that he was local to here and cherished the town, but also that the exhibition is free; rather in the spirit of the Salts Mill.
   location:
-    name:
+    name: Saltaire, Yorkshire, England
     country: england
     coordinates: -1.78961, 53.83824
   tags: art, photogenic
@@ -162,7 +162,7 @@
     name: Explore York’s Snickelways
     description: The beating heart of Yorkshire, York is a city palpably steeped in history. The thick curtain walls still surround the city and are a great way to circumnavigate the centre of town, before heading deep into the medieval streets of the town. Most visitors will be well versed in navigating the Shambles, a series of tightly-packed shopping streets where Tudor-beamed buildings encroach on the street. But less will know about York’s snickelways - the labyrinthine alleyways that cut through the main thoroughfares. These old medieval snickets share some rather peculiar names - Hole-in-the-Wall, Nether Hornpot Lane, and the curious Mad Alice Lane, which carries its own legend of a scorned lover who poisoned her husband. Take a step back in time and discover a part of York hidden in plain sight.
   location:
-    name:
+    name: York, England
     country: england
     coordinates: -1.08729, 53.95996
   tags: city, oddity, architecture, history
@@ -174,7 +174,7 @@
     name: Visit Lawrence of Arabia’s pie shop in Lincoln
     description: Boasting a magnificent 11th century cathedral and castle, Lincoln oozes history and style. Be it exploring the makers and farmers markets in the shadow of the castle walls, or browsing the independent traders of Steep Hill, Lincoln is one of those special places that transports you back in time. Oh, and there’s a fantastic pie shop. Disclaimer - Lawrence of Arabia never owned the pie shop, but he did lodge in the building for a number of years after his return from the Middle East. However, tucked away on Steep Hill is Browns Pie Shop, a big locals’ favourite boasting hearty, quality and well-priced fare.
   location:
-    name:
+    name: Lincoln, England
     country: england
     coordinates: -0.54057, 53.23068
   tags: food, city
@@ -186,7 +186,7 @@
     name: Visit a car park in Leicester
     description: History favours the winners. As the last Plantagenet king was slain in Bosworth, the War of the Roses drew to a close. Richard III quickly became the arch villain of the Middle Ages, a murderer of children, a savage, a hunched madman hell bent on power. It is somehow grossly fitting then, that his body would be found under the humdrum concrete of a municipal car park in Leicester. The find was miraculous, with the council quick to open a new visitor centre dedicated to the man and the historic find. Make your own mind up about the king in the car park, with a fascinating exhibition on England’s most notorious villain.
   location:
-    name:
+    name: Leicester, England
     country: england
     coordinates: -1.13975, 52.63687
   tags: oddity, history, city
@@ -198,7 +198,7 @@
     name: It’s a pudding you tart - Bakewell
     description: This quaint and picturesque village is the most popular in the Peak District, with a famous Monday market and distinctive stone cottages making for an idyllic getaway. It is also, unsurprisingly, home to the famous Bakewell Pudding; all puff and pastry and sweet jam, in short a warm cuddle for your stomach.  Three shops declare theirs to be the original. It’s as good an excuse as any to try all three.
   location:
-    name:
+    name: Bakewell, Peak District, England
     country: england
     coordinates: -1.67617, 53.2152
   tags: food,
@@ -210,7 +210,7 @@
     name: Explore a mine by boat in Castleton
     description: Through a hidden entrance, descend deep into the caverns beneath the Peak District, where a boat awaits your journey deep into the subterranean landscape. As you glide through the old lead mine through the narrowest of passages, you’ll find relief as the network opens out into a cathedral-like cavern, suspending you above the body of water known forebodingly as the bottomless pit. An eerie, enchanting experience not to be missed.
   location:
-    name:
+    name: Castleton, Derbyshire, England
     country: england
     coordinates: -1.77651, 53.34368
   tags: oddity, adventure, photogenic
@@ -222,7 +222,7 @@
     name: Walk the world’s first iron bridge at Ironbridge
     description: Spanning the spectacular wooded valley of the Severn, the iron bridge is a marvel of engineering - yet it is arguably more significant as a potent symbol for the dawn of the Industrial Revolution. It’s hard to imagine when exploring the bucolic Severn Valley, with its chocolate-box villages and to-die-for scenery, that here, Abraham Darby and his foundry revolutionised the use of iron and catalysed seismic changes to the fabric of the country. Discover the history for yourself, or simply delight in the beautiful towns and  villages of the gorge.
   location:
-    name:
+    name: Ironbridge, England
     country: england
     coordinates: -2.48132, 52.62838
   tags: history, photogenic
@@ -234,7 +234,7 @@
     name: Head for the home of Balti in Birmingham
     description: If you’re serious about your curry, knowing your daal from your dansak, you’d better head to the UK’s capital of curry - Birmingham. It may surprise some that the home of heavy metal, that place with more canals than Venice, that second city that is criminally overlooked, is also home to the delicate and lively spices of the veritable balti. Balti ground zero? The Balti Triangle in Sparkbrook. It all started here in the ‘70s, at stalwart balti houses like Adil’s and Shababs. Both are still firing up the iconic metal pots, artfully blending their spices for devoted customers.
   location:
-    name:
+    name: Birmingham, England
     country: england
     coordinates: -1.8904, 52.48624
   tags: food, city, cultural
@@ -246,7 +246,7 @@
     name: Meet the Yam-Yams of the Black Country
     description: The industrial heritage of Birmingham is brought to life in the Black Country Living Museum in Dudley, an open-air recreation of an early 20th-century village. Telling the tale of the Industrial Revolution, of which Dudley played a central role, the museum is staffed by a host of characters in period costume who’ll take you back in time. There’s a coal mine, a school, a fairground, a pub, a chippy, and a whole village of retro houses and shops to explore.
   location:
-    name:
+    name: Birmingham, England
     country: england
     coordinates: -2.07526, 52.52008
   tags: cultural, learn
@@ -258,7 +258,7 @@
     name: Satisfy your foodie cravings in Ludlow
     description: The formidable number of specialist food shops, top-class restaurants and food markets local to the Shropshire town of Ludlow have earned it the moniker of ‘foodie paradise’ - and it’s no wonder. With its perfectly-preserved medieval architecture, laid-back feel, and proud emphasis on quality produce and local sourcing, Ludlow is a town-wide celebration of all things British. Take a tour of the delis, bakers, cheese shops and breweries that call the town home, before departing for a cosy meal in one of many local restaurants. For the full experience, walk off the calories the next day exploring the nearby Shropshire hills.
   location:
-    name:
+    name: Shropshire, England
     country: england
     coordinates: -2.71391, 52.36774
   tags: food, city
@@ -270,7 +270,7 @@
     name: Go traditional at one of the UK’s best fish & chip shops in Aldeburgh
     description: It’s downright divisive to suggest any fish & chip shop is the nation’s best - a nation of chip lovers,we all have our favourites - but Aldeburgh Fish & Chips is certainly worth a detour. Local lad Ed Sheeran exclaimed as much, claiming it to be the country’s best. Since 1967, this stalwart chippy has been frying the day’s fresh catch, becoming so popular it expanded to three locations on the small seaside town’s high street. Grab your cod and mushy peas, and find your spot on the seafront for that most sacred of UK holiday experiences.
   location:
-    name:
+    name: Aldeburgh, Suffolk
     country: england
     coordinates: 1.60044, 52.15535
   tags: food, coast
@@ -279,22 +279,22 @@
 
 - id: boating-on-the-norfolk-broads
   editorial:
-    name: Boating on the Broads, Norfolk
+    name: Boating on the Broads
     description: The Norfolk Broads, a landscape of serene waterways, make for a wonderfully wild escape. The best way to explore them? By boat, naturally. From canoes to river barges with bedrooms and kitchens, head out on the water and breeze past fields of reeds, twisting around the waterways and darting across the vast broads where unique birdlife soundtracks your adventure. Head for small village pubs, or moor your boat in the remotest part you can find.
   location:
-    name:
+    name: The Broads, Norfolk, England
     country: england
     coordinates: 1.40956, 52.7106
   tags: quiet, outdoors, adventure
 
 
 
-- id: picnic-cambridge
+- id: cambridge
   editorial:
     name: Picnic with the cows of Cambridge
     description: Cambridge, the iconic university city, manages to shirk the usual trappings of urban life by trading it for remarkable architecture, idyllic waterways and lush college greens. It’s a city that borders the countryside in a rather unique way, lacing its typical high street town affair with rustic charms a-plenty. There is perhaps no better example than the herds of cows that freely frequent the inner-city commons. Just a short hop from your butchers, bakers, post office et al, you’ll stumble on green spaces where cows have priority. Once a common sight across the country, Cambridge is one of the only urban centres to retain this old tradition, one which is wonderfully eccentric.
   location:
-    name:
+    name: Cambridge, England
     country: england
     coordinates: 0.12181, 52.20533
   tags: food, city, oddity
@@ -306,7 +306,7 @@
     name: Spend a penny in Southwold
     description: The popular Suffolk seaside retreat of Southwold is one of those well-heeled destinations, a beach town with great restaurants, historic pubs, and picturesque scenes at every corner. Yet on Southwold’s pier lies a place packed with curios and oddities. The Under the Pier Show is a fantastical spot, a reimagining of the penny arcade filled with machines of wit and satire. Try your hand at Wack-a-Banker, or decide the fate of a little lamb in Pet-or-Meat. The mad genius behind the machines is Tim Hunkin, blurring the lines between a modern art installation and old-fashioned seaside fun. A bizarre experience not to be missed!
   location:
-    name:
+    name: Southwold, England
     country: england
     coordinates: 1.68018, 52.32562
   tags: oddity, coast
@@ -318,7 +318,7 @@
     name: Feast on fresh oysters in Whitstable
     description: One of the most beautiful seaside towns in Kent, Whitstable is famed for its glorious oyster heritage, a high street packed with quaint independent shops, and irresistibly picturesque beaches. Head for the harbour front and pitch up at one of the town’s chic oyster bars, slurping fresh-from-the-boat oysters.
   location:
-    name:
+    name: Whitstable, England
     country: england
     coordinates: 1.02425, 51.36104
   tags: coast, city, photogenic
@@ -330,22 +330,22 @@
     name: Treasure hunt in Margate
     description: Shops are old hat; yards are the new - Covid-friendly - in-thing. Fort Road Yard is an exceptionally cool space filled with old fairground bits (Dreamland anyone?) and industrial salvage that make for killer statement pieces. Browse the shacks that line the yard for more vintage treasures, alongside tiny galleries that house local art. Fort Road Yard is a mecca for unique mid-century kitsch, hidden just behind the seafront ready for modernist treasure hunters.
   location:
-    name:
+    name: Margate, England
     country: england
     coordinates: 1.38683, 51.38964
   tags: shopping, coast, city
 
 
 
-- id: botany-bay
+- id: hastings
   editorial:
-    name: Explore the coves of Botany Bay
-    description: Along the stretch of coast joining Broadstairs to Margate hides one of the most beautiful beaches in England. Botany Bay, a short picturesque walk from Broadstairs, is less visited than its more popular neighbour Joss Bay. Steep, white cliffs tumble down to a long stretch of soft sands, a beach flanked by lapping waves to one side and stark white monoliths to the other. Find a set of stairs and head for the beach, where tall chalk stacks pierce the sands and a network of smuggler’s caves make for hours of fun exploration.
+    name: Shop vintage in Hastings
+    description: A once fashionable Victorian resort, Hastings has reinvented itself as an eclectic mix of trad seaside charms and hub for eccentric curiosities. In Hastings Old Town, Robert’s Rummage is an antique landmark. Robert has been dealing in curios and vintage his whole life, now selling off parts of his vast collection and sharing incredible stories with those who lend an ear. For more old school cool, head for Hastings’ oldest shop - Reeves & Son. Offering its wares since 1818, walk in the footsteps of Victorian visitors clamouring for a bargain. For an even more immersive experience, stop by the Edwardian time machine that is A G Hendy. One part homestore, one part restaurant, Hendy’s shop is a carefully curated vision, a shop for the curious decked in vintage fittings and Edwardian sensibility.
   location:
-    name:
+    name: Hastings, England
     country: england
     coordinates: 1.43457, 51.38888
-  tags: coast, city, photogenic
+  tags: shopping, city, oddity
 
 
 
@@ -358,6 +358,7 @@
     country: england
     coordinates: -0.10716, 51.51431
   tags: cultural, food, city
+  group: london-pubs
 
 
 
@@ -370,6 +371,7 @@
     country: england
     coordinates: -0.05355, 51.50176
   tags: cultural, food, city
+  group: london-pubs
 
 
 
@@ -382,6 +384,7 @@
     country: england
     coordinates: -0.09032, 51.5043
   tags: cultural, food, city
+  group: london-pubs
 
 
 
@@ -394,6 +397,7 @@
     country: england
     coordinates: -0.13173, 51.51274
   tags: cultural, food, city
+  group: london-pubs
 
 
 
@@ -402,7 +406,7 @@
     name: Learn to paint in St Ives, Cornwall
     description: Despite the glimmering seafront, pristine white beaches and historic houses that populate the picturesque town of St Ives, it’s the arts scene that truly defines it. Switch off and discover Cornwall’s art hub for yourself at the St Ives School of Painting, a historic institution offering classes and courses on everything from oil painting to life drawing. With sea-facing views and excellent facilities, it’s a chance to unplug from the outside world and unleash your inner creativity. And why stop there? Continue the experience with visits to the iconic Tate St Ives and Barbara Hepworth Museum, and be inspired by the greats of British Modernism.
   location:
-    name:
+    name: West Cornwall, England
     country: england
     coordinates: -5.49088, 50.20838
   tags: coast, learn
@@ -414,7 +418,7 @@
     name: Island hopping on the Isles of Scilly
     description: A cluster of beautiful islands off the coast of Cornwall, the Isles of Scilly offers a slower pace of life, far removed from the pressures of the mainland. With its blue waters, white beaches, unspoilt meadows and abundance of wildlife including dolphins and seals, you’d be forgiven for thinking you were in the Caribbean. Starting on St Mary’s, the largest and most populated of the islands, take a tour of the archipelago, uncovering the distinctive character of each island and immersing yourself in their untrammelled beauties.
   location:
-    name:
+    name: Isles of Scilly, England
     country: england
     coordinates: -6.32749, 49.92772
   tags: coast, outdoors, photogenic
@@ -426,7 +430,7 @@
     name: Sustainable Foraging in Studland Bay, Dorset
     description: Get closer to nature and learn how to live off the land as you gather cooking ingredients from the sea and shoreline of Studland Bay in Dorset. The Fore Adventure sea school has day-long crash courses in the art of foraging, teaching you how to find everything from crabs and cockles to edible plants and seaweeds. You travel by kayak to the creeks and islands around the bay, before bringing all your freshly-foraged ingredients together in the evening for a feast on the beach.
   location:
-    name:
+    name: Studland Bay, Dorset, England
     country: england
     coordinates: -1.95276, 50.6419
   tags: learn, food, outdoors, coast
@@ -438,7 +442,7 @@
     name: Fly fishing in New Forest, Hampshire
     description: Who’s never once dreamed of fishing in a glassy stream, surrounded by the ancient trees of a magical woodland? The chalk streams of the rivers Test, Itchen and Wiltshire Avon in the New Forest are the birthplace of fly fishing, home to brown trout, grayling and atlantic salmon alike - and with plenty of fishing guides available in the local area to show you the ropes, you’ll be hooking your first catch in no time. Immersed in the spectral beauty of this incredible forest - with a packed lunch and flask of coffee in tow - lose yourself to the reflective wonders of the sport.
   location:
-    name:
+    name: New Forest, Hampshire, England
     country: england
     coordinates: -1.63277, 50.87587
   tags: learn, outdoors, quiet
@@ -450,7 +454,7 @@
     name: Stargazing on the island, Isle of Wight
     description: Already a popular short-hop island escape, the Isle of Wight is famed for its pretty villages and natural beauty; but few visitors experience the south of the island at night – the perfect location for stargazing. Head for Atherfield or Compton as the sun slowly sinks away, with some blankets and nibbles in hand. Pitch a spot high on the cliffs (take a torch so you don't fall off!) and gaze at the heavens for an unmissable light show.
   location:
-    name:
+    name: Isle of Wight, England
     country: england
     coordinates: -1.30473, 50.69384
   tags: quiet, outdoors, photogenic
@@ -462,7 +466,7 @@
     name: Discover the secrets Rocky Valley, Tintagel
     description: Without the name giving too much away, this valley a little east of Tintagel is a rather beautiful spectacle. As the river cuts its way to the sea, a tall, craggy gorge is cut, with hidden waterfalls and intrepid trails to unpick. Don’t miss the early Bronze Age labyrinth carvings that add a touch of mystery to an already beguiling landscape.
   location:
-    name:
+    name: Tintagel, North Cornwall, England
     country: england
     coordinates: -4.75066, 50.66301
   tags: cultural, attractions, photogenic
@@ -474,7 +478,7 @@
     name: Take a pilgrimage in Marazion
     description: Claimed to be the oldest chartered town in Britain, Marazion is another in a long line of charming coastal villages along Cornwall’s southern shore. Yet its pièce de résistance, jutting and looming over the village just off shore, is St Michael’s Mount. A long, cobbled causeway, only revealed at low tide, leads to the mount. Perched above is the castle, reached by crumbling medieval pathways that make for a romantic pilgrimage to the top.
   location:
-    name:
+    name: Marazion, West Cornwall, England
     country: england
     coordinates: -5.46395, 50.12507
   tags: photogenic, cultural, history
@@ -486,7 +490,7 @@
     name: Explore the untamed beauty of the Roseland Peninsula
     description: Enter this garden of hedgerows and pastures, where typical Cornish beauty rolls across gentle hills and off craggy cliffs. Unpick quiet coves and unspoilt beaches, before heading to Roseland’s heart, the town of St Mawes. This remarkably cosmopolitan spot has become somewhat of a ‘destination’, with a smart set of fine restaurants, boutiques and cafes, all graced by the effortlessly picturesque surroundings.
   location:
-    name:
+    name: Roseland Peninsula, West Cornwall, England
     country: england
     coordinates: -5.01463, 50.15855
   tags: outdoors, photogenic, walking
@@ -498,7 +502,7 @@
     name: Cawsand & Kingsand
     description: Begin your Cornish adventure with one of the finest secrets on the stunning southern coastline. From Plymouth, cross into Cornwall on the Torpoint Ferry. The Rame Peninsula unfolds in front of you, a little-known beauty spot where hidden coves and craggy, sea-battered cliffs fringe this Area of Outstanding Natural Beauty. Head for the idyllic twin villages of Cawsand & Kingsand, leaving the car near the top and walking the narrow lanes of pastel homes. A small smattering of pubs offer fine views over Plymouth Sound.
   location:
-    name:
+    name: Cawsand & Kingsand, West Cornwall, England
     country: england
     coordinates: -4.202, 50.33117
   tags: coast, outdoors, photogenic
@@ -510,7 +514,7 @@
     name: Hunt for fossils on the Jurassic Coast
     description: This protected stretch of coastline spoils visitors with some of the finest seaside settings in Britain. Beauty spots like Lulworth Cove, Durdle Door and the lofty cliffs of Beer and West Bay are great jumping-off points; but the fun really starts when you start your fossil hunting. If you’re lucky, you’ll score a few ammonites to take home; but patience is key. The best beaches for finding your fossilised souvenir are Charmouth and Lyme Regis.
   location:
-    name:
+    name: Jurassic Coast, Dorset, England
     country: england
     coordinates: -2.27683, 50.62116
   tags: history, oddity, coast
@@ -519,10 +523,10 @@
 
 - id: walcot-village-bath
   editorial:
-    name: Treasure hunting in Walcot Village, Bath
+    name: Treasure hunting in Walcot Village
     description: Known as the Artisan Quarter, this charming Bath neighbourhood is filled with eclectic shops. Discover your next treasure in a clutch of antique shops, or find something local and handmade in one of the many independent boutiques. Don’t miss the grotesque faces dotted on the wall of The Paragon, some representing characters from local myths, some carvings of real life locals.
   location:
-    name:
+    name: Walcot Village, Bath, England
     country: england
     coordinates: -2.35967, 51.38604
   tags: shopping, city
@@ -534,7 +538,7 @@
     name: City night kayaking down the Avon, Bath
     description: A rather peculiar way of exploring Bath, breeze past the gorgeous Georgian architecture from the slow ebb and flow of the river Avon, as you stand atop your paddleboard for a nighttime - well, paddle. Original Wild offers a range of waterborne experiences, but seeing the frankly beautiful city of Bath lit up at night, whilst also surfing along the river, is an experience not quickly forgotten.
   location:
-    name:
+    name: Avon River, Bath, England
     country: england
     coordinates: -2.35632, 51.38189
   tags: oddity, city, adventure

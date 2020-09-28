@@ -4,7 +4,7 @@
 .tag {
   background-color: $black;
   color: $white;
-  padding: $s-6 $s-2;
+  padding: 3px 12px 4px;
   display: inline-block;
   border-radius: 3px;
   margin-right: 2px;
@@ -14,10 +14,6 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-
-
-
-
 
 
 
@@ -58,8 +54,8 @@
     overflow: hidden;
     position: absolute;
     z-index: $z-content-upper;
-    top: $s4; bottom: $s4;
-    left: $s4; right: $s4;
+    top: $s8; bottom: $s8;
+    left: $s8; right: $s8;
     opacity: 1;
     @include transition;
     &.loading { opacity: 0; }
@@ -209,13 +205,18 @@
   border-radius: 50%;
   cursor: pointer;
   @include background-attributes;
+  @include transition;
+  &:hover {
+    width: $s6;
+    height: $s6;
+  }
 }
 
 .se-marker {
   box-shadow: 0 1px 6px 0 rgba($black,0.3);
   z-index: 1;
-  width: $s4;
-  height: $s4;
+  width: $s3;
+  height: $s3;
   border-radius: 50%;
   cursor: pointer;
   background-color: $black;
@@ -223,4 +224,23 @@
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  @include transition;
+  &:hover {
+    width: $s4;
+    height: $s4;
+  }
 }
+
+
+
+/*=========================================
+  Guide pages
+*/
+
+.guide {
+
+  &__section {
+    padding-top: $s8;
+  }
+}
+

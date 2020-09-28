@@ -71,7 +71,7 @@
             "tag": "{{tag.id}}",
             "title": "{{poi.editorial.name}}",
             "country": "{{poi.location.country}}",
-            "description": "{{poi.editorial.description}}"
+            "description": "{{poi.editorial.description | truncatewords: 20}}"
           },
           "geometry": {
             "type": "Point",
@@ -89,6 +89,10 @@
     };
 
     var coords = {
+      default: {
+        lat: [-8.14798, 50.04525],
+        lng: [-1.820481, 58.606231]
+      },
       {% for region in site.data.regions %}
       {{region.id}}_local: {
         lat: [{{region.coordinates.local.lat}}],

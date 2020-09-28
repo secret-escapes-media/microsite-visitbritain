@@ -3,7 +3,7 @@ layout: page
 ---
 
 <div class="container vpad--xxl text--center">
-  <p class="p--xxl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odit aliquam reprehenderit magni eius, esse quisquam minima inventore, adipisci excepturi. Quibusdam sequi eum labore vitae recusandae aliquam commodi, consectetur itaque.</p>
+  {{page.intro}}
 </div>
 <div class="bg--white">
   <div class="container">
@@ -11,14 +11,16 @@ layout: page
       {% assign children = site.html_pages | where: 'group-parent', page.id %}
       {% for child in children %}
       <div class="col col--6">
-        <div class="img img--4-3 depth--md-hover rounded--md" style="background-image: url({{site.img}}/pages/{{child.id}}/nav.jpg);">
+        <div class="img img--1-1 depth--md-hover rounded--md" style="background-image: url({{site.img}}/pages/{{child.id}}/nav.jpg);">
           <a href="{{site.baseurl}}{{child.url}}" class="img__link"></a>
           <div class="img__content">
-            <div class="h h--sm">{{child.title}}</div>
+            <div class="h h--xxxl h--display">{{child.title}}</div>
           </div>
+          <div class="img__overlay"></div>
         </div>
       </div>
       {% endfor %}
     </div>
   </div>
+  <div class="space--xxl"></div>
 </div>

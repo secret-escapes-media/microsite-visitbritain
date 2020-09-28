@@ -2,8 +2,14 @@
 layout: page
 ---
 
-<div class="bg--grey-lightest">
-  {% include offer/all-offers-dynamic.html sheet=page.offers.sheet limit=page.offers.limit %}
+<div class="container container--xxl vpad--xxl text--center">
+  {{page.intro}}
+</div>
+
+<div class="bg--grey-lightest vpad--xxl">
+  <div class="container">
+    {% include offer/all-offers-dynamic.html sheet=page.offers.sheet limit=page.offers.limit %}
+  </div>
 </div>
 {% include page/promo-offers.html %}
 
