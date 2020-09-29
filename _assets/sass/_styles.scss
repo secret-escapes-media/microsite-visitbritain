@@ -207,6 +207,7 @@
   @include background-attributes;
   @include transition;
   &:hover {
+    z-index: 3;
     width: $s6;
     height: $s6;
   }
@@ -226,6 +227,7 @@
   background-position: center;
   @include transition;
   &:hover {
+    z-index: 3;
     width: $s4;
     height: $s4;
   }
