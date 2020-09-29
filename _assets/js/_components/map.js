@@ -1,26 +1,5 @@
 
 
-
-// Waits for window to finish resizing before running code
-function debouncer( func , element ) {
-   var timeoutID , timeout = timeout || 200;
-   return function () {
-      var scope = this , args = arguments;
-      clearTimeout( timeoutID );
-      timeoutID = setTimeout( function () {
-          func.apply( scope , Array.prototype.slice.call( args ) );
-      } , timeout );
-   };
-}
-function windowResize(func) {
-  $(window).resize(debouncer(function(event){
-    func();
-  }));
-}
-
-
-
-
 // Create mapbox with markers as HTML elements
 if( $('#map').length > 0 ){
   $(document).ready(function(){
@@ -31,7 +10,7 @@ if( $('#map').length > 0 ){
       container: 'map',
       style: 'mapbox://styles/hamishjgray/ckek0njfp0psd1ar0a7f23v11',
       logoPosition: 'bottom-right',
-      interactive: false,
+      // interactive: false,
       zoom: 7,
       center: [-2.6986074,54.4651411]
     });
@@ -61,7 +40,6 @@ if( $('#map').length > 0 ){
         ], {padding: 30}); // adds padding
       }
       getMapBounds(); // resets the view when the map loads
-      windowResize(getMapBounds); // resets the view after the viewport has finished resizing
 
 
       /*===========================
