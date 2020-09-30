@@ -10,7 +10,7 @@ if( $('#map').length > 0 ){
       container: 'map',
       style: 'mapbox://styles/hamishjgray/ckek0njfp0psd1ar0a7f23v11',
       logoPosition: 'bottom-right',
-      // interactive: false,
+      interactive: false,
       zoom: 7,
       center: [-2.6986074,54.4651411]
     });
