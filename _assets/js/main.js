@@ -1,6 +1,11 @@
 // general js for the project that wouldn't be a reuseable component
 
 
+
+/*==================================
+MAP TOOL
+*/
+
 // Step 1
 $('.js-origin').click(function(){
   var searchOrigin = $(this).attr('data-origin');
@@ -61,4 +66,18 @@ $('.js-search-reset').click(function(){
   $('#step-distance').attr('data-distance',"");
   $('.search__window').removeClass().addClass('search__window step-1');
 });
+
+
+
+/*==================================
+QUERY STRING BYPASSES
+*/
+
+if (getQueryStringByName('from-map')) {
+  $('.js-back-to-map').show();
+}
+if (getQueryStringByName('from-modal')) {
+$('.search__window').removeClass('step-1').addClass('step-3');
+}
+
 

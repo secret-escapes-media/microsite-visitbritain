@@ -39,10 +39,37 @@
   }
   &__tags {
     position: absolute;
-    top: $s0; left: $s0;
+    top: $s-2; left: $s-2;
     z-index: $z-content;
-
   }
+  &__warning {
+    position: absolute;
+    top: $s-2; left: $s-2;
+    z-index: $z-content;
+    background-color: rgba($error-light,0.9);
+    border: 1px solid $error-medium;
+    border-radius: 3px;
+    padding: 2px 8px;
+    font-size: 14px;
+    &:before {
+      content: "";
+      display: inline-block;
+      font-weight: 800;
+      font-size: $s-2;
+      height: $s0; width: $s0;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 50%;
+      background-color: $error-medium;
+      color: $white;
+      margin-right: 8px;
+      background-image: url('../img/icons/attr-warning.svg');
+      background-size: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
   &:hover &__overlay { background-color: rgba($black,.6); }
   &--grow {
     transform: scale(1);

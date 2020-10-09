@@ -9,11 +9,10 @@
 
     {% for item in section.pois %}
     {% assign poi = site.data.pois[page.id] | where: "id", item.id %}
-    {% assign poicols = 12 | divided_by: section.pois.size %}
     {% for poi in poi %}
 
       {% assign tags = poi.tags | split: ',' %}
-      <div class="col col--{{poicols}}">
+      <div class="col{% if section.pois.size < 4 %} col--4{% else %} col--3{% endif %}">
         <div class="img img--3-4 img--grow rounded--md depth--md theme--dark" style="background-image: url({{site.img}}/pois/{{poi.id}}.jpg);">
           <a href="javascript:void(0);" class="img__link js-open-modal" data-open-modal="{{poi.id}}"></a>
           <div class="img__content">

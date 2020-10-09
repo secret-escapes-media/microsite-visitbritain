@@ -38,7 +38,7 @@
   &__close {
     position: absolute;
     right: 0;
-    top: -$icon-size;
+    top: 0;
     height: $icon-size;
     width: $icon-size;
     background-color: rgba($black,.5);
@@ -49,6 +49,21 @@
     cursor: pointer;
     z-index: $z-overlay-upper;
     transition: background-color $transition-time ease;
+    &:hover{ background-color: $black; }
+  }
+  &__back-to-map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: $icon-size;
+    padding: $s0;
+    background-color: rgba($black,.5);
+    cursor: pointer;
+    z-index: $z-overlay-upper;
+    transition: background-color $transition-time ease;
+    color: $white;
+    font-size: $s1;
+    font-weight: 600;
     &:hover{ background-color: $black; }
   }
   &__nav {

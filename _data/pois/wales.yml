@@ -2,6 +2,7 @@
 
 
 - id: take-a-coastal-trip-packed-with-history-in-north-wales
+  warning: Check local government advice before travelling here
   editorial:
     name: Take a coastal trip packed with history in North Wales
     description: Where the piercing mountains of Snowdonia meet the sea, you’ll find a coastline of ravishing beauty. Visit the Italianate wonder of Portmeirion, explore the ancient walls of Harlech, Caernarfon and Conwy castles, or sink into a cosy cafe in Barmouth. Head for Bardsey Island, which fosters an incredible amount of history that belies its small size. The Llŷn Peninsula offers true hidden beauty, with a mix of Iron Age hill forts, abundant wildlife and quaint seaside towns like Aberdaron and Abersoch, ripe for exploring.
@@ -14,6 +15,7 @@
 
 
 - id: llangollen-canal
+  warning: Check local government advice before travelling here
   editorial:
     name: Cruise on the Llangollen Canal
     description: Hire a narrowboat and drift along this historic canal route. Starting in north-east Wales, navigate the twists and turns of the waterway before floating into the Shropshire countryside, making sure, of course, to pitstop at the various pubs on the way. The highlight of the trip will undoubtedly be the ‘stream in the sky’, the Pontcysyllte Aqueduct, a bridge over the River Dee that soars high above the valley. Expect some truly epic views (and a hit of adrenaline) as you cross to the other side.
@@ -26,18 +28,20 @@
 
 
 - id: anglesey
+  warning: Check local government advice before travelling here
   editorial:
     name: Walk ethereal landscapes in Anglesey
     description: Wales’ biggest island offers some truly inspiring landscapes, though few come as beguiling as what lies on Parys Mountain. The Great Opencast is an ancient coppermine, a vast scar on the landscape caused by centuries of pick axes, shovels and gunpowder. What’s left is a craterous lunar panorama that dazzles with a rich palette of colour - purple, green, black and golden hues can all be spied from the perimeter walkway. The views are pretty unique, a world away from the more typical pastoral beauty of this pocket of North Wales.
   location:
     name: Anglesey, Wales
     country: wales
-    coordinates: -3.83982, 53.18946
+    coordinates: -4.42914, 53.26532
   tags: adventure, walking, oddity
 
 
 
 - id: bodnant-welsh-food-centre
+  warning: Check local government advice before travelling here
   editorial:
     name: Stock up on Welsh produce at The Bodnant Welsh Food Centre
     description: Consider yourself a foodie? You’ll be in seventh heaven at the Bodnant Welsh Food Centre. A cluster of old farmhouses have been converted into a culinary destination, where the finest produce of the region is handpicked for visiting foodies. Head for the Farm Shop, stocked with baked goods and cheeses made on-site, or sink into the cafe to taste some of the artisan wares that stock the shelves next door. This is your one-stop-shop as you adventure around the beautiful North Wales landscape.
@@ -45,7 +49,7 @@
     name: Tal-y-cafn, Colwyn Bay, Wales
     country: wales
     coordinates: -3.80508, 53.23409
-  tags: food,
+  tags: food, city
 
 
 

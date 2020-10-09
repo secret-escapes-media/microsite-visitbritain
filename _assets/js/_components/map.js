@@ -26,13 +26,17 @@ if( $('#map').length > 0 ){
         var el = document.createElement('a');
         el.className = 'marker js-open-modal marker--'+marker.properties.tag;
         el.setAttribute("style", "background-image: url('_assets/img/pois/" + marker.properties.id + ".jpg')");
+        var warning ="";
+        if( marker.properties.warning){
+          var warning = '<div class="img__warning">'+marker.properties.warning+'</div>';
+        }
 
-          // make a marker for each feature and add to the map
+        // make a marker for each feature and add to the map
         new mapboxgl.Marker(el)
           .setLngLat(marker.geometry.coordinates)
           .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
           .setMaxWidth('420px')
-          .setHTML('<div class="img img--16-9" style="background-image: url(_assets/img/pois/' + marker.properties.id + '.jpg);"><a href="guides/'+marker.properties.country+'/?open-modal='+marker.properties.id+'" class="img__link"></a></div><div class="boxpad--sm text--center"><h4 class="h h--serif h--xxs text--bold">' + marker.properties.title + '</h4><div class="space--xxs"></div><div>' + marker.properties.description + ' <a class="text--link" href="guides/'+marker.properties.country+'/?open-modal='+marker.properties.id+'" class="text--link">Read more</a></div>'))
+          .setHTML('<div class="img img--16-9" style="background-image: url(_assets/img/pois/'+marker.properties.id+'.jpg);">'+warning+'<a href="guides/'+marker.properties.country+'/?from-map=true&open-modal='+marker.properties.id+'" class="img__link"></a></div><div class="boxpad--sm text--center"><h4 class="h h--serif h--xxs text--bold">' + marker.properties.title + '</h4><div class="space--xxs"></div><div>'+marker.properties.description+' <a class="text--link" href="guides/'+marker.properties.country+'/?from-map=true&open-modal='+marker.properties.id+'" class="text--link">Read more</a></div>'))
           .addTo(map);
       });
 
