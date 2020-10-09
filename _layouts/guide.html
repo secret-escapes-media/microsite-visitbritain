@@ -25,8 +25,16 @@ layout: page
 <div class="space--xxl"></div>
 <div class="bg--grey-lightest vpad--xxl">
   <div class="container">
-    <div class="h h--md">{{page.title}} Travel Offers</div>
-    <div class="space--lg"></div>
+    <div class="width width--xxl text--center">
+      <div class="h h--md">{{page.offers.title}}</div>
+      <div class="space--sm"></div>
+      <div class="boxpad--sm depth--flat rounded--md">
+        <div class="h text--smallcaps">Know before you go</div>
+        {{page.offers.covid-information}}
+      </div>
+      <div class="space--lg"></div>
+    </div>
+
     {% include offer/all-offers-dynamic.html sheet=page.title limit="20" %}
   </div>
 

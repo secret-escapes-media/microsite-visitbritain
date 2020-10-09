@@ -21,6 +21,22 @@ li {
 }
 ul li   { list-style-type: disc; }
 ol li   { list-style-type: decimal; }
+.list {
+  &--inline {
+    list-style: none;
+    padding: 0;
+    & li {
+      margin: 0; padding: 0;
+      display: inline-block;
+      &:after {
+        content: "|";
+        display: inline-block;
+        margin: 0 $s0;
+      }
+      &:last-child:after { content: none; }
+    }
+  }
+}
 
 hr, .hr {
   border: 0;

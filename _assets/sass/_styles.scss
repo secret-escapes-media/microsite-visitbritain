@@ -21,57 +21,77 @@
 /*=========================================
   Overview page
 */
+$sidebar-width: 40%;
+$background-colour: #17181b;
 #search {
   position: relative;
-  height: 100%;
   width: 100%;
-  background-color: $black;
+  height: 100%;
+  background-color: $background-colour;
 }
 .search {
 
   // Map fixed in the background
   &__map {
-    position: absolute;
+    position: relative;
     z-index: 0;
-    top: 0; bottom: 0;
-    left: 16.6667%; right: 0;
+    height: 100%;
     &:before {
-      content: "";
+      content: none;
       display: block;
       z-index: 5;
       pointer-events: none;
       position: absolute;
       top: 0; bottom: 0;
-      left: 0;
-      width: 33.333%;
-      background: linear-gradient(90deg, rgba($black,1) 0%, rgba($black,0) 100%);
+      right: 0;
+      width: $sidebar-width/2;
+      background: linear-gradient(-90deg, rgba($background-colour,1) 0%, rgba($background-colour,0) 100%);
+    }
+    @include bp($xxxl){
+      position: absolute;
+      z-index: 0;
+      top: 0; bottom: 0;
+      left: 0; right: $sidebar-width;
+      &:before {
+        content: "";
+      }
     }
   }
 
   // Interface for searching
   &__window {
-    pointer-events: none;
-    overflow: hidden;
+    overflow: scroll;
     position: absolute;
     z-index: $z-content-upper;
-    top: $s8; bottom: $s8;
-    left: $s8; right: $s8;
+    top: 0; right: 0;
+    height: 100%; width: 100%;
+    padding: $s2;
+    background-color: rgba($background-colour,0.8);
     opacity: 1;
-    @include transition;
     &.loading { opacity: 0; }
+    &.step-3 {
+      right: -100%;
+    }
+    @include bp($xxxl){
+      padding: $s6;
+      &.step-3 {
+        right: 0;
+        padding: $s6 0;
+        background-color: transparent;
+        width: $sidebar-width;
+      }
+    }
   }
 
   // Steps
   &__step {
-    pointer-events: all;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba($black,0.2);
+    border-radius: 10px;
     width: 100%;
-    height: 100%;
-    overflow: scroll;
+    min-height: 100%;
     display: none;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     // Where are you travelling from?
     &-origin {
@@ -97,53 +117,64 @@
       background: linear-gradient(90deg, rgba($secondary-light,1) 0%, rgba($secondary,1) 100%);
       color: $white;
       height: 100%;
+      overflow: hidden;
       .step-2 & { display: flex; }
-      & .step__title { position: absolute; top: $s4; left: $s4; z-index: 10;}
+      @include bp($xxl) {
+        & .step__title { position: absolute; top: $s6; left: $s6; z-index: 10;}
+      }
+
       .distances {
-        position: absolute;
-        top: 0; right: 0; bottom: 0;
-        left: -100%;
-        z-index: 0;
         &__label {
-          position: absolute;
-          top: 50%;
-          right: $s3;
-          transform: translateY(-50%);
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 0.01rem;
           font-size: $s2;
-          text-align: left;
+          text-align: center;
+          padding-top: $s4;
         }
-        &__option {
+        @include bp($xxl) {
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translateY(-50%) translateX(-50%);
-          display: block;
-          border-radius: 50%;
-          &:before {
-            content: "";
+          top: 0; right: 0; bottom: 0;
+          left: -100%;
+          z-index: 0;
+          &__label {
+            position: absolute;
+            top: 50%;
+            right: $s3;
+            transform: translateY(-50%);
+            text-align: left;
+            padding: 0;
+          }
+          &__option {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
             display: block;
-            width: 100%;
-            padding-top: 100%;
-          }
-          &-home {
-            z-index: 3;
-            background-color: $secondary-darkest;
-            background: linear-gradient(90deg, rgba($secondary-darker,1) 0%, rgba($secondary-darkest,1) 100%);
-            width: 20%;
-          }
-          &-short {
-            width: 50%;
-            z-index: 2;
-            background-color: $secondary-dark;
-            background: linear-gradient(90deg, rgba($secondary-dark,1) 0%, rgba($secondary-darker,1) 100%);
-          }
-          &-anywhere {
-            width: 100%;
-            border-radius: 0;
-            z-index: 1;
+            border-radius: 50%;
+            &:before {
+              content: "";
+              display: block;
+              width: 100%;
+              padding-top: 100%;
+            }
+            &-home {
+              z-index: 3;
+              background-color: $secondary-darkest;
+              background: linear-gradient(90deg, rgba($secondary-darker,1) 0%, rgba($secondary-darkest,1) 100%);
+              width: 20%;
+            }
+            &-short {
+              width: 50%;
+              z-index: 2;
+              background-color: $secondary-dark;
+              background: linear-gradient(90deg, rgba($secondary-dark,1) 0%, rgba($secondary-darker,1) 100%);
+            }
+            &-anywhere {
+              width: 100%;
+              border-radius: 0;
+              z-index: 1;
+            }
           }
         }
       }
@@ -151,7 +182,7 @@
 
     // What do you want out of your escape
     &-interests {
-      width: 33.333%;
+      float: right;
       background-color: transparent;
       box-shadow: none;
       color: $white;
@@ -174,6 +205,10 @@
         &.active { background-color: $secondary; }
         &.inactive { opacity: 0.5; }
       }
+      & .explore-country {
+        max-height: 120px;
+        border: 1px solid rgba($white,0.2);
+      }
     }
   }
 }
@@ -186,8 +221,10 @@
 }
 .mapboxgl-map {
   font-family: $sans !important;
-  font-size: 15px !important;
+  font-size: 16px !important;
+  line-height: 1.6rem !important;
 }
+// .mapboxgl-control-container > div { z-index: 20; }
 .mapboxgl-popup { z-index: $z-overlay; width: 420px; }
 .mapboxgl-popup-content { padding: 0 !important; overflow: hidden;}
 .mapboxgl-popup-close-button {
@@ -204,7 +241,6 @@
   border-radius: 50%;
   cursor: pointer;
   @include background-attributes;
-  @include transition;
   &:hover {
     z-index: 3;
     width: $s6;
@@ -223,7 +259,6 @@
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
-  @include transition;
   &:hover {
     z-index: 3;
     width: $s4;

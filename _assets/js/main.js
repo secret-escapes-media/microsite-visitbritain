@@ -7,12 +7,17 @@ $('.js-origin').click(function(){
   $('#step-origin').attr('data-origin',searchOrigin);
   $('.search__window').removeClass('step-1').addClass('step-2');
 
-  // update explore more button with correct country from this step
+  // update explore more with correct country from this step
   var country = $(this).attr('data-origin-country');
   var countrySlug = country.replace(/\s+/g, '-').toLowerCase();
-  var countryHref = $('.js-explore-country').attr('href');
-  $('.js-explore-country').html('Explore more of ' + country);
-  $('.js-explore-country').attr('href', countryHref + countrySlug);
+  var countryHref = $('.js-explore-country a').attr('href');
+
+  var countryImage = $('.js-explore-country').css('background-image');
+  var countryImagePre = countryImage.split('pages/');
+  $('.js-explore-country').css('background-image', countryImagePre[0]+'pages/'+countrySlug+'/nav.jpg")');
+
+  $('.js-explore-country a').attr('href', countryHref + countrySlug);
+  $('.js-explore-country .img__content').html('Explore more of ' + country);
 });
 
 

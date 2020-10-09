@@ -65,6 +65,7 @@ $scale-xl: 17px;
       @include gradient($primary,$primary-dark);
       &:before { border-color: $primary-dark; }
     }
+    .theme--dark & { color: $white; }
   }
 
   // Scale

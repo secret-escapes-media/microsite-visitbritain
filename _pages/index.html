@@ -3,13 +3,11 @@ layout: default
 id: overview
 nav: true
 nav-order: 1
-title: Britain, your way
+title: The UK, your way
 
 banner:
   content: >
-    <div class="container boxpad--lg theme--dark text--center">
-      <div class="banner__title banner__title-overview"></div>
-    </div>
+    <div class="banner__title banner__title-overview"></div>
 ---
 
 
@@ -19,8 +17,8 @@ banner:
 
 <div class="vpad--xxl bg--grey-darkest theme--dark">
   <div class="container container--xxl text--center">
-    <p class="p--xxl">Your freedom to explore is back. Let us help you discover the best of Great Britain and Northern Ireland, with our guide to the secrets, hidden gems, unmissable experiences and unforgettable moments you can safely indulge in this autumn. Piece together your escape with our insider tips, incredible hotel stays, and tailor your next adventure to your exact tastes; because it’s time to treat yourself and escape the everyday.</p>
-    <p class="p--xxl">Are you ready to rediscover the best of Great Britain and Northern Ireland? Start with our interactive guide, where your input will reveal some of the incredible things you could experience this autumn...</p>
+    <p class="p--xxl">Your freedom to explore is back. Let us help you discover the best of Great Britain and Northern Ireland, with our guide to the secrets, hidden gems, unmissable experiences and unforgettable moments you can safely indulge in this autumn. Piece together your escape with our insider tips and incredible hotel stays, and tailor your next adventure to your exact tastes. It’s time to treat yourself and escape the everyday.</p>
+    <p class="p--xxl">Are you ready to rediscover what lies on your doorstep? Start with our interactive guide, where your input will reveal some of the incredible things you could experience this autumn…</p>
     <div class="space--sm"></div>
     <a href="#search" class="btn btn--white js-splash">Start now</a>
   </div>
@@ -60,7 +58,7 @@ banner:
 
     <div id="step-distance" class="search__step search__step-distance js-step" data-distance="">
       <div class="boxpad--lg text--center">
-        <div class="step__title h h--display h--xxl">How far are you willing to travel?</div>
+        <div class="step__title h h--display h--xxl">How far do you want to go?</div>
 
         <div class="distances">
           <a href="javascript:void(0);" class="distances__option distances__option-home js-distance" data-distance="local">
@@ -79,9 +77,10 @@ banner:
 
 
     <div id="step-interests" class="search__step search__step-interests js-step">
-      <div class="boxpad--lg">
+      <div class="boxpad--lg theme--dark">
         <div class="h h--display h--xl">Choose what matters most to you</div>
-        <div class="space--lg"></div>
+        <p class="p--lg">Explore our map of the very best hidden gems and Secret Escapes in the UK. If you know what you're looking for in your next break select your interests below.</p>
+        <div class="space--md"></div>
 
         {% for tag in site.data.tags %}
         <a href="javascript:void(0);" class="depth--md-hover rounded--md interest js-map-filter" data-filter="{{tag.id}}">
@@ -89,10 +88,19 @@ banner:
         </a>
         {% endfor %}
 
-        <div class="vpad--lg">
-          <a href="{{site.baseurl}}/guides/" class="btn btn--sm js-explore-country">Explore more</a>
-          <a href="#search" class="btn btn--sm js-search-reset">Start over</a>
+        <div class="space--lg"></div>
+
+        <div class="explore-country js-explore-country img img--21-9 bg--grey-dark rounded--md depth--md" style="background-image: url({{site.img}}/pages/)">
+          <a href="{{site.baseurl}}/guides/" class="img__link"></a>
+          <div class="img__content h h--xxxs">
+            Explore more
+          </div>
+          <div class="img__overlay"></div>
         </div>
+
+        <div class="space--lg"></div>
+
+        <a href="#search" class="btn btn--outline js-search-reset">Start over</a>
 
       </div>
     </div>

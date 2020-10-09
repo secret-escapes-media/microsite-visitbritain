@@ -49,18 +49,6 @@
 
 
 
-- id: explore-waterfall-country-in-wales
-  editorial:
-    name: Explore Waterfall Country in Wales
-    description: There are some truly spectacular waterfalls in the Vale of Neath. The Hollywood starlet is Henrhyd Falls, as featured in the film Batman – yet the heart of this fascinating spot lies further east. Try the Four Falls Walk to see the best of the Vale of Neath. From the dramatic Sgwd Clun-Gwyn that cascades from one tier into the next, to the spellbinding Sgwd yr Eira curtain where you can actually walk behind the falls, Waterfall Country is a truly magical place.
-  location:
-    name: Vale of Neath, Wales
-    country: wales
-    coordinates: -3.65184, 51.72571
-  tags: outdoors, photogenic, walking
-
-
-
 - id: canyons-of-glynneath
   editorial:
     name: Splash around the canyons of Glynneath
@@ -94,5 +82,29 @@
     country: wales
     coordinates: -2.63249, 51.83604
   tags: adventure, outdoors, photogenic
+
+
+
+- id: hermits-home
+  editorial:
+    name: Head to the hermit’s home nestled in the Pembrokeshire coastline
+    description: It’s a rare thing when a location gives you goosebumps. St Govan’s Chapel is one of those places. Precariously perched halfway down a steep cliff, this tiny stone chapel hugs the weather-beaten rocks, with dramatic views over the sea and cliffs at every turn. The 13th-century chapel marks the place where St Govan lived his days as a hermit, having sheltered here after escaping from pirates and devoting his life to God in return for saving him. The legend adds a fitting mystery to this already magical place.
+  location:
+    name: Pembrokeshire, Wales
+    country: wales
+    coordinates: -4.93688, 51.59879
+  tags: adventure, outdoors, photogenic, architecture
+
+
+
+# - id: explore-waterfall-country-in-wales
+#   editorial:
+#     name: Explore Waterfall Country in Wales
+#     description: There are some truly spectacular waterfalls in the Vale of Neath. The Hollywood starlet is Henrhyd Falls, as featured in the film Batman – yet the heart of this fascinating spot lies further east. Try the Four Falls Walk to see the best of the Vale of Neath. From the dramatic Sgwd Clun-Gwyn that cascades from one tier into the next, to the spellbinding Sgwd yr Eira curtain where you can actually walk behind the falls, Waterfall Country is a truly magical place.
+#   location:
+#     name: Vale of Neath, Wales
+#     country: wales
+#     coordinates: -3.65184, 51.72571
+#   tags: outdoors, photogenic, walking
 
 
