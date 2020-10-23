@@ -52,19 +52,35 @@
     &:hover{ background-color: $black; }
   }
   &__back-to-map {
+    vertical-align: middle;
     position: absolute;
     left: 0;
     top: 0;
     height: $icon-size;
-    padding: $s0;
+    padding-right: $s0;
     background-color: rgba($black,.5);
     cursor: pointer;
     z-index: $z-overlay-upper;
     transition: background-color $transition-time ease;
     color: $white;
-    font-size: $s1;
+    font-size: $s0;
+    text-transform: uppercase;
     font-weight: 600;
     &:hover{ background-color: $black; }
+    &:before {
+      content: "";
+      width: $icon-size;
+      height: $icon-size;
+      display: inline-block;
+      position: relative;
+      margin-right: $s0;
+      vertical-align: middle;
+      background-color: $black;
+      background-image: url('../img/icons/arrow-left.svg');
+      background-size: 1em;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
   &__nav {
     position: fixed;

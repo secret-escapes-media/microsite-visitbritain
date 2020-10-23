@@ -39,7 +39,7 @@
   }
   &__tags {
     position: absolute;
-    top: $s-2; left: $s-2;
+    bottom: $s-2; left: $s-2;
     z-index: $z-content;
   }
   &__warning {

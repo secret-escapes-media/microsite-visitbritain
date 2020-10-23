@@ -7,8 +7,8 @@
   padding: 3px 12px 4px;
   display: inline-block;
   border-radius: 3px;
-  margin-right: 2px;
-  margin-left: 2px;
+  margin-right: 4px;
+  margin-top: 4px;
   font-size: $s-1;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -221,11 +221,11 @@ $background-colour: #17181b;
 }
 .mapboxgl-map {
   font-family: $sans !important;
-  font-size: 16px !important;
-  line-height: 1.6rem !important;
+  font-size: 15px !important;
+  line-height: 1.5rem !important;
 }
 // .mapboxgl-control-container > div { z-index: 20; }
-.mapboxgl-popup { z-index: $z-overlay; width: 420px; }
+.mapboxgl-popup { z-index: $z-overlay; width: 400px; }
 .mapboxgl-popup-content { padding: 0 !important; overflow: hidden;}
 .mapboxgl-popup-close-button {
   z-index: $z-overlay; background-color: $white !important;

@@ -35,8 +35,8 @@ if( $('#map').length > 0 ){
         new mapboxgl.Marker(el)
           .setLngLat(marker.geometry.coordinates)
           .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-          .setMaxWidth('420px')
-          .setHTML('<div class="img img--16-9" style="background-image: url(_assets/img/pois/'+marker.properties.id+'.jpg);">'+warning+'<a href="guides/'+marker.properties.country+'/?from-map=true&open-modal='+marker.properties.id+'" class="img__link"></a></div><div class="boxpad--sm text--center"><h4 class="h h--serif h--xxs text--bold">' + marker.properties.title + '</h4><div class="space--xxs"></div><div>'+marker.properties.description+' <a class="text--link" href="guides/'+marker.properties.country+'/?from-map=true&open-modal='+marker.properties.id+'" class="text--link">Read more</a></div>'))
+          .setMaxWidth('400px')
+          .setHTML('<div class="img img--16-9" style="background-image: url(_assets/img/pois/'+marker.properties.id+'.jpg);">'+warning+'<a href="guides/'+marker.properties.country+'/?from-map=true&open-modal='+marker.properties.id+'" class="img__link"></a></div><div class="boxpad--sm text--center"><h4 class="h h--serif h--xxxs text--bold">' + marker.properties.title + '</h4><div class="space--xxs"></div><div>'+marker.properties.description+' <a class="text--link" href="guides/'+marker.properties.country+'/?from-map=true&open-modal='+marker.properties.id+'" class="text--link">Read more</a></div>'))
           .addTo(map);
       });
 
@@ -102,8 +102,8 @@ if( $('#map').length > 0 ){
             new mapboxgl.Marker(el)
               .setLngLat(marker.geometry.coordinates)
               .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-              .setMaxWidth('420px')
-              .setHTML('<div class="img img--16-9" style="background-image: url('+marker.properties.LeadImage+');"><a href="'+marker.properties.URL+'" class="img img__link"></a></div><div class="boxpad--sm text--center"><div class="offer__location">'+marker.properties.DestinationName+'</div><h4 class="h h--serif h--xxs text--bold">' + marker.properties.SaleTitle + '</h4><div class="space--xxs"></div><div>' + marker.properties.ReasonsToLove + '</div><div class="space--xs"></div><a href="'+marker.properties.URL+'" class="btn btn--xs">View offer</a>'))
+              .setMaxWidth('400px')
+              .setHTML('<div class="img img--16-9" style="background-image: url('+marker.properties.LeadImage+');"><a href="'+marker.properties.URL+'" class="img img__link"></a></div><div class="boxpad--sm text--center"><div class="offer__location">'+marker.properties.DestinationName+'</div><h4 class="h h--serif h--xxxs text--bold">' + marker.properties.SaleTitle + '</h4><div class="space--xxs"></div><div>' + marker.properties.ReasonsToLove + '</div><div class="space--xs"></div><a href="'+marker.properties.URL+'" class="btn btn--xs">View offer</a>'))
               .addTo(map);
           });
         });

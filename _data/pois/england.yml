@@ -9,7 +9,7 @@
     name: Lindisfarne, Northumberland
     country: england
     coordinates: -1.80085, 55.68077
-  tags: attractions, cultural, history, photogenic, architecture
+  tags: attractions, cultural, photogenic, architecture
 
 
 
@@ -69,7 +69,7 @@
     name: Lake District, England
     country: england
     coordinates: -3.19925, 54.51125
-  tags: adventure, daring, outdoors
+  tags: adventure, daring
 
 
 
@@ -93,7 +93,7 @@
     name: Grasmere, Lake District, England
     country: england
     coordinates: -3.02362, 54.45793
-  tags: food, walking, outdoors
+  tags: food, walking
 
 
 
@@ -129,7 +129,7 @@
     name: Yorkshire, England
     country: england
     coordinates: -0.535, 54.43435,
-  tags: outdoors, quiet, coast
+  tags: outdoors, quiet, coast, art
 
 
 
@@ -141,7 +141,7 @@
     name: Yorkshire, England
     country: england
     coordinates: -1.56943, 53.61397
-  tags: art, photogenic
+  tags: art, photogenic, attractions
 
 
 
@@ -153,7 +153,7 @@
     name: Saltaire, Yorkshire, England
     country: england
     coordinates: -1.78961, 53.83824
-  tags: art, photogenic
+  tags: art, photogenic, shopping
 
 
 
@@ -165,7 +165,7 @@
     name: York, England
     country: england
     coordinates: -1.08729, 53.95996
-  tags: city, oddity, architecture, history
+  tags: oddity, architecture, history, shopping
 
 
 
@@ -189,7 +189,7 @@
     name: Leicester, England
     country: england
     coordinates: -1.13975, 52.63687
-  tags: oddity, history, city
+  tags: oddity, history
 
 
 
@@ -321,7 +321,7 @@
     name: Whitstable, England
     country: england
     coordinates: 1.02425, 51.36104
-  tags: coast, city, photogenic
+  tags: coast, city, photogenic, food
 
 
 
@@ -409,7 +409,7 @@
     name: West Cornwall, England
     country: england
     coordinates: -5.49088, 50.20838
-  tags: coast, learn
+  tags: coast, learn, art
 
 
 
@@ -433,7 +433,7 @@
     name: Studland Bay, Dorset, England
     country: england
     coordinates: -1.95276, 50.6419
-  tags: learn, food, outdoors, coast
+  tags: learn, food, coast
 
 
 
@@ -481,7 +481,7 @@
     name: Marazion, West Cornwall, England
     country: england
     coordinates: -5.46395, 50.12507
-  tags: photogenic, cultural, history
+  tags: photogenic, cultural, history, attractions
 
 
 
@@ -493,13 +493,13 @@
     name: Roseland Peninsula, West Cornwall, England
     country: england
     coordinates: -5.01463, 50.15855
-  tags: outdoors, photogenic, walking
+  tags: quiet, adventure, photogenic, walking
 
 
 
 - id: cawsand-kingsand
   editorial:
-    name: Cawsand & Kingsand
+    name: Discover the idyllic twin villages of Cawsand & Kingsand
     description: Begin your Cornish adventure with one of the finest secrets on the stunning southern coastline. From Plymouth, cross into Cornwall on the Torpoint Ferry. The Rame Peninsula unfolds in front of you, a little-known beauty spot where hidden coves and craggy, sea-battered cliffs fringe this Area of Outstanding Natural Beauty. Head for the idyllic twin villages of Cawsand & Kingsand, leaving the car near the top and walking the narrow lanes of pastel homes. A small smattering of pubs offer fine views over Plymouth Sound.
   location:
     name: Cawsand & Kingsand, West Cornwall, England

@@ -1,4 +1,6 @@
 
+
+
 - id: carrick-a-rede
   editorial:
     name: Wild Swimming in the Carrick-a-Rede, County Antrim
@@ -31,7 +33,7 @@
     name: Londonderry, Northern Ireland
     country: northern-ireland
     coordinates: -7.30857, 54.99661
-  tags: cultural, history, learn, city, art
+  tags: cultural, learn, city, art
 
 
 
@@ -55,4 +57,4 @@
     name: Belfast, Northern Ireland
     country: northern-ireland
     coordinates: -5.93012, 54.59728
-  tags: history, learn, city, food, walking
+  tags: cultural, learn, city

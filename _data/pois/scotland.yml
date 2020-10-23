@@ -1,4 +1,6 @@
 
+
+
 - id: north-coast-500
   editorial:
     name: Ride the North Coast 500 in the Highlands
@@ -31,7 +33,7 @@
     name: Lairg, Scotland
     country: scotland
     coordinates: -4.76661, 58.57817
-  tags: coast, quiet, outdoors
+  tags: coast, quiet, outdoors, attractions
 
 
 
@@ -67,7 +69,7 @@
     name: Aberdeen, Scotland
     country: scotland
     coordinates: -2.09427, 57.14971
-  tags: city, cultural
+  tags: city, cultural, photogenic
 
 
 
@@ -115,5 +117,5 @@
     name: Islay, Scotland
     country: scotland
     coordinates: -6.17706, 55.73625
-  tags: food, city
+  tags: food, cultural
 
