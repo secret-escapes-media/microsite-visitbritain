@@ -93,7 +93,7 @@
     name: Edinburgh, Scotland
     country: scotland
     coordinates: -3.18826, 55.95325
-  tags: city, shopping, food, art
+  tags: city, shopping, food, art, attractions
 
 
 
@@ -105,7 +105,7 @@
     name: St Abbs, Scotland
     country: scotland
     coordinates: -2.13851, 55.89892
-  tags: adventure, daring
+  tags: adventure, daring, quiet
 
 
 
@@ -117,5 +117,5 @@
     name: Islay, Scotland
     country: scotland
     coordinates: -6.17706, 55.73625
-  tags: food, cultural
+  tags: food, cultural, attractions
 

@@ -225,7 +225,7 @@
     name: Ironbridge, England
     country: england
     coordinates: -2.48132, 52.62838
-  tags: history, photogenic
+  tags: history, photogenic, attractions
 
 
 
@@ -357,7 +357,7 @@
     name: London, England
     country: england
     coordinates: -0.10716, 51.51431
-  tags: cultural, food, city
+  tags: cultural, food, city, attractions
   group: london-pubs
 
 
