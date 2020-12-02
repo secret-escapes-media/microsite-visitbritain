@@ -1,22 +1,56 @@
-- title: Spectacular Oslo & Bergen break with optional fjord tour
-  id: spectacular-oslo-bergen-break-with-optional-fjord-tour
-  location: Scandic St. Olavs plass & Clarion Hotel Admiral, Norway
-  description: A fantastic four-night trip to Norway's Oslo and Bergen, with one of the world's most scenic train journeys between the two cities - including flights and an optional fjord tour
-  price: 459
-  price-description: per person for 4 nights
-  saved: 37
-  expires: 2020-12-31
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/111801/479827ae_bf6a_4a1f_82d0_bfb19945b4e2_nws.jpg
-  link: https://www.secretescapes.com/spectacular-oslo-and-bergen-break-with-optional-fjord-tour-scandic-st-olavs-plass-and-clarion-hotel-admiral-norway-2/sale?gce_urg=0&utm_source=SE&utm_campaign=7_Norway_201703&utm_medium=Hub
-
-- title: Farris Bad
-  id: farris-bad
-  location: Larvik, Norway
-  description: Upscale beachfront stay at the first Nordic balneological health resort, with a supersized spa
-  price: 214
+- title: Central Belfast hotel with relaxing leisure centre - Fully refundable
+  location: Clayton Hotel Belfast, Northern Ireland
+  description: A city centre hotel with health club in Belfast
+  price: 65
   price-description: per room per night
-  saved: 33
-  expires: 2020-08-14
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/111801/479827ae_bf6a_4a1f_82d0_bfb19945b4e2_nws.jpg
-  link: https://www.secretescapes.com/farris-bad-larvik-norway/sale?gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=12_Norway_201703
+  saved: 50
+  expires: 2021-10-17
+  image: https://secretescapes-web.imgix.net/hotels/1855/f54d0056_27f5_458c_8d27_d206bbf48b8d.jpg?auto=format,compress
+  link: https://www.secretescapes.com/central-belfast-hotel-with-relaxing-leisure-centre-fully-refundable-clayton-hotel-belfast-northern-ireland/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
 
+- title: Sleek & central Belfast abode - Fully refundable
+  location: Maldron Hotel Belfast City, Northern Ireland
+  description: Trendy Belfast hotel in the city centre
+  price: 74
+  price-description: per room per night
+  saved: 36
+  expires: 2021-10-19
+  image: https://secretescapes-web.imgix.net/hotels/1866/c7317983_469b_4252_89c6_d0bad4549193.jpg?auto=format,compress
+  link: https://www.secretescapes.com/sleek-and-central-belfast-abode-fully-refundable-maldron-hotel-belfast-city-northern-ireland/sale-hotel
+  attribute-refundable: true
+  attribute-flights:
+  attribute-customisable:
+
+- title: Discover Dublin and Belfast's highlights
+  location: Dublin, Belfast
+  description: Enjoy an Irish adventure with this double city trip to Dublin and Belfast inc. hotels with breakfast, exciting excursions and train ticket
+  price: 329
+  price-description: Based on 2 people for 4 nights
+  saved: 0
+  expires: 2030-07-15
+  image: https://secretescapes-web.imgix.net/webRedirects/586/4e2079bf_249c_4f9d_9800_2d3289768959.jpg?auto=format,compress
+  link: https://www.secretescapes.com/discover-dublin-belfast-highlights-uk/sale-wrd
+  attribute-refundable:
+  attribute-flights: true
+  attribute-customisable: true
+
+- title: Hilton Belfast
+  location: 4 Lanyon Place, Belfast, United Kingdom
+  description: Next to The Waterfront Hall convention centre, Hilton Belfast has a fitness room and a modern bar and restaurant. Overlooking the River Lagan, Belfast’s vibrant city centre is under a mile away. This 4-star Hilton’s spacious rooms each feature a flat-screen TV with pay-per-view channels, a minibar, a marble bathroom and 24-hour room service. Many rooms enjoy city, river or mountain views. With riverside views and floor-to-ceiling windows, Sonoma Bar and Grill offers a menu with Irish produce including Irish lamb. Guests can visit the No.4 bar, specialising in premium drinks including local draft beers and award-winning gins and spirits. The bar serves food from 12:00 daily. Guests attending events at the Belfast Waterfront convention centre can walk between there and the hotel without leaving the building. The Odyssey Arena is just a 15-minute walk from the Belfast Hilton. Belfast Cathedral and a range of city-centre shops are a 5-minute taxi ride away.
+  image: https://q-xx.bstatic.com/xdata/images/hotel/max600/223406177.jpg?k=e307911c825df3d0e45fb4f41798be6af4d16c0789d9a1d0a036beb291d15866&o=
+  link: https://secure.rezserver.com/hotels/hotel/?hotel_id=700016421&currency=GBP&refid=8597
+
+- title: AC Hotel by Marriott Belfast
+  location: Donegall Quay, Belfast Harbour, Belfast, United Kingdom
+  description: AC Hotel Belfast is an urban retreat in a riverside location. Explore Belfast on foot with Titanic Belfast, City Hall, Belfast Waterfront, SSE Arena and the shops of Victoria Square a short walk away. The contemporary bedrooms feature king-size beds, Nespresso coffee makers, glass enclosed double showers and technology including free high-speed internet access and 49-inch TVs. Guests can also enjoy an AC Fitness Room, 24-hour room service and can opt for a continental or cooked breakfast. With 2 meeting rooms, an AC Lounge, riverside terrace and all-day dining, the hotel provides the perfect co-working space. When day turns to night, the restaurant “Novelli at City Quays” will excite, as multi-Michelin-starred chef Jean-Christophe Novelli brings his flare to the dining experience, whilst expert bartenders serve up local knowledge with craft beer and cocktails.
+  image: https://q-xx.bstatic.com/xdata/images/hotel/max600/150064910.jpg?k=0dc05f06fafc6a3cbef26b5ba49aeff96b8c20a7948103323d17bb3c20580b8e&o=
+  link: https://secure.rezserver.com/hotels/hotel/?hotel_id=702506483&currency=GBP&refid=8597
+
+- title: Hampton By Hilton Belfast City Centre
+  location: Hope Street, Belfast, United Kingdom
+  description: Hampton by Hilton Belfast City Centre is located only 1.4 miles from the SSE Arena and a minute's walk from Great Victoria Street rail station. It features an on-site business centre and fitness facilities. Secure discounted overnight parking is available beside the hotel. Free WiFi is available throughout the property. Each modern room at the property features a Hampton bed™ and an LCD flat-screen TV with a coffee maker. The en-suite facilities include a shower and complimentary toiletries. A packed Continental breakfast is offered daily. The lobby bar offers alcoholic drinks and hot beverages, as well as light meals and snacks. For a quick snack, guests can visit the 24/7 snack hub offering soft drinks, snacks and some travel essentials. Victoria Square shopping centre is less than a mile from Hampton by Hilton Belfast City Centre. The Grand Opera House and the Lyric Theatre are less than two miles away. Belfast City Airport is a 15-minute drive from Hampton by Hilton Belfast City Centre.
+  image: https://q-xx.bstatic.com/xdata/images/hotel/max600/153391368.jpg?k=a7fa6570210f1e780a12c64b23ae085df072aac33feb83e83783ccf5f5161a2a&o=
+  link: https://secure.rezserver.com/hotels/hotel/?hotel_id=702498410&currency=GBP&refid=8597

@@ -1,37 +1,34 @@
 <div class="offer depth--sm depth--sm-hover rounded--sm">
 
-  <a class="offer__link" href="{{offer.link}}"><span class="btn btn--orange">View Offer</span></a>
+  <a class="offer__link" href="{{offer.link}}"><span class="btn btn--orange">{% if offer.price %}View Offer{% else %}Show Prices{% endif %}</span></a>
 
-  <div class="img img--16-9" style="background-image: url('{{offer.image}}')">
-
-    <div class="offer__expires js-offer-expires p--sm" data-expires="{{offer.expires}}"></div>
-  </div>
+  <div class="img img--16-9" style="background-image: url('{{offer.image}}')"></div>
 
   <div class="boxpad--md">
 
     <div class="offer__location">{{offer.location}}</div>
     <h3 class="offer__title">{{offer.title}}</h3>
     <div class="space--xxs"></div>
-    <div class="offer__description">{{offer.description}}</div>
+    <div class="offer__description">{{offer.description | truncatewords: 32}}</div>
 
-    <div class="offer__bottom">
-
-      <div class="offer__bottom-left">
-
-        <div class="offer__details">
-          <p>
-            From
-            <span class="offer__price">£{{offer.price}}</span>
-            {{offer.price-description}}
-          </p>
+    {% if offer.price %}
+      <div class="offer__bottom">
+        <div class="offer__bottom-left">
+          <div class="offer__details">
+            <p>
+              From
+              <span class="offer__price">£{{offer.price}}</span>
+              {{offer.price-description}}
+            </p>
+          </div>
         </div>
-
+        <div class="offer__bottom-right">
+          {% unless offer.saved == 0 %}
+            <div class="offer__discount">-{{offer.saved}}%</div>
+          {% endunless %}
+        </div>
       </div>
-      <div class="offer__bottom-right">
-        <div class="offer__discount">-{{offer.saved}}%</div>
-      </div>
-
-    </div>
+    {% endif %}
 
   </div>
 

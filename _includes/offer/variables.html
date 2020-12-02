@@ -7,4 +7,6 @@
 {% assign offers-by-saving = offers | sort: 'saved' | reverse %}
 
 <!-- offers by price -->
-{% assign offers-by-price = offers | sort: 'price' %}
+{% assign offers-with-price = offers | where_exp: 'item', 'item.price != null' | sort: 'price' %}
+{% assign offers-without-price = offers | where: 'price', null | sort: 'title' %}
+{% assign offers-by-price = null | concat: offers-with-price | concat: offers-without-price %}

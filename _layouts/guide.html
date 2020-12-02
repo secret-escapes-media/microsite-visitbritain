@@ -35,7 +35,11 @@ layout: page
       <div class="space--lg"></div>
     </div>
 
-    {% include offer/all-offers-dynamic.html sheet=page.title limit="20" %}
+    {% if page.id =='northern-ireland' %}
+      {% include offer/all-offers.html %}
+    {% else %}
+      {% include offer/all-offers-dynamic.html sheet=page.title limit="20" %}
+    {% endif %}
 
     <div class="space--lg"></div>
     <div class="text--center">
