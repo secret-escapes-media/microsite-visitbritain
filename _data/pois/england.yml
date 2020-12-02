@@ -440,7 +440,7 @@
 - id: fly-fishing-in-new-forest-hampshire
   editorial:
     name: Fly fishing in New Forest, Hampshire
-    description: Who’s never once dreamed of fishing in a glassy stream, surrounded by the ancient trees of a magical woodland? The chalk streams of the rivers Test, Itchen and Wiltshire Avon in the New Forest are the birthplace of fly fishing, home to brown trout, grayling and atlantic salmon alike - and with plenty of fishing guides available in the local area to show you the ropes, you’ll be hooking your first catch in no time. Immersed in the spectral beauty of this incredible forest - with a packed lunch and flask of coffee in tow - lose yourself to the reflective wonders of the sport.
+    description: Ever dreamed of fishing in a glassy stream, surrounded by the ancient trees of a magical woodland? The chalk streams of the rivers Test, Itchen and Wiltshire Avon in the New Forest are the birthplace of fly fishing, home to brown trout, grayling and atlantic salmon alike - and with plenty of fishing guides available in the local area to show you the ropes, you’ll be hooking your first catch in no time. Immersed in the spectral beauty of this incredible forest - with a packed lunch and flask of coffee in tow - lose yourself to the reflective wonders of the sport.
   location:
     name: New Forest, Hampshire, England
     country: england
@@ -463,7 +463,7 @@
 
 - id: tintagel
   editorial:
-    name: Discover the secrets Rocky Valley, Tintagel
+    name: Discover the secrets of Rocky Valley, Tintagel
     description: Without the name giving too much away, this valley a little east of Tintagel is a rather beautiful spectacle. As the river cuts its way to the sea, a tall, craggy gorge is cut, with hidden waterfalls and intrepid trails to unpick. Don’t miss the early Bronze Age labyrinth carvings that add a touch of mystery to an already beguiling landscape.
   location:
     name: Tintagel, North Cornwall, England
@@ -535,8 +535,8 @@
 
 - id: city-night-kayaking-down-the-avon-bath
   editorial:
-    name: City night kayaking down the Avon, Bath
-    description: A rather peculiar way of exploring Bath, breeze past the gorgeous Georgian architecture from the slow ebb and flow of the river Avon, as you stand atop your paddleboard for a nighttime - well, paddle. Original Wild offers a range of waterborne experiences, but seeing the frankly beautiful city of Bath lit up at night, whilst also surfing along the river, is an experience not quickly forgotten.
+    name: Night kayaking down the Avon, Bath
+    description: A rather peculiar way of exploring Bath, breeze past the gorgeous Georgian architecture from the unique perspective of the River Avon, as you stand atop your paddleboard for a nighttime - well, paddle. Original Wild offers a range of waterborne experiences, but seeing the frankly beautiful city of Bath lit up at night, whilst also surfing along the river, is an experience not quickly forgotten.
   location:
     name: Avon River, Bath, England
     country: england

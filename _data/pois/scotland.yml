@@ -76,7 +76,7 @@
 - id: seafood-dining-in-oban-argyll
   editorial:
     name: Seafood dining in Oban
-    description: Known as ‘little bay’ in Gaelic, the seemingly unremarkable fishing town of Oban is the seafood capital of Scotland. After a day of walking through the achingly-beautiful Argyll hillsides, discover an abundance of award-winning restaurants and eateries along the harbour, a collection of locally-sourced gems serving up the freshest of catches, before winding down with a glass of malt whiskey taken straight from the local distillery. With fresh air, fresh food and soul-stirring scenery wherever you look, the town is a gateway to rejuvenation.
+    description: Known as ‘little bay’ in Gaelic, the seemingly unremarkable fishing town of Oban is the seafood capital of Scotland. After a day of walking through the achingly beautiful Argyll hillsides, discover an abundance of award-winning restaurants and eateries along the harbour, a collection of locally-sourced gems serving up the freshest of catches, before winding down with a glass of malt whiskey taken straight from the local distillery. With fresh air, fresh food and soul-stirring scenery wherever you look, the town is a gateway to rejuvenation.
   location:
     name: Argyll, Scotland
     country: scotland
@@ -111,8 +111,8 @@
 
 - id: taste-the-peat
   editorial:
-    name: Taste the peat - a tipsy island tour of Islay
-    description: The Isle of Islay, also known by the affectionate moniker ‘Queen of the Hebrides’, harbours one of those iconic Scottish temptations - renowned whiskey. Your arrival proves as stirring as the tipples that await, with a network of ferry crossings darting around the beguiling isles off the mainland. Exploring Islay will typically revolve around discovering some of the greatest, peatiest whiskies in the world - one dram at a time.
+    name: A tipsy island tour of Islay
+    description: The Isle of Islay, also known by the affectionate moniker ‘Queen of the Hebrides’, harbours one of those iconic Scottish temptations — renowned whiskey. Your arrival proves as stirring as the tipples that await, with a network of ferry crossings darting around the beguiling isles off the mainland. Exploring Islay will typically revolve around discovering some of the greatest, peatiest whiskies in the world - one dram at a time.
   location:
     name: Islay, Scotland
     country: scotland
