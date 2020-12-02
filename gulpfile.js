@@ -23,11 +23,14 @@ function cleanAssets() {
 
 // start browserSync local server and show under site subdirectory
 function browserSyncServe() {
+  const baseurl = '/uk/2020/visitbritain-phase2';
   browserSync.init({
+    baseDir: '_site/',
+    ui: false,
+    startPath: baseurl,
     server: {
-      baseDir: '_site/',
       routes: {
-        '/uk/2020/visitbritain-phase2': '_site/'
+        [baseurl]: '_site/'
       }
     }
   });
@@ -186,7 +189,9 @@ function compressJs() {
 // compress images files for live
 function compressImages() {
   return gulp.src('./_site/_assets/img/**/*')
-  .pipe(image())
+  .pipe(image({
+    svgo: ['--disable', 'removeViewBox']
+  }))
   .pipe(gulp.dest('./_site/_assets/img'));
 }
 
