@@ -2,19 +2,19 @@
 title: Visit Britain
 locale: uk
 partner:
-  name: Client Name
-  link: "#client-name"
+  name: VisitBritain
+  link: https://www.visitbritain.com/gb/en
 
 description: >
   Your freedom to explore is back. Let us help you discover the best of Great Britain and Northern Ireland, with our guide to the hidden gems, unmissable experiences and unforgettable moments you can safely indulge in in the new year. Piece together your escape with our insider tips and incredible hotel stays, and tailor your next adventure to your exact tastes. It’s time to treat yourself and escape the everyday.
 
 
 # file paths
-url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/uk/2020/visitbritain-phase2" # the subpath of your site, e.g. /blog/
-img:     "/uk/2020/visitbritain-phase2/_assets/img"
-css:     "/uk/2020/visitbritain-phase2/_assets/css"
-js:      "/uk/2020/visitbritain-phase2/_assets/js"
+url:     "https://mp.secretescapes.com" # the base hostname & protocol for your site
+baseurl: "/uk/2020/visitbritain" # the subpath of your site, e.g. /blog/
+img:     "/uk/2020/visitbritain/_assets/img"
+css:     "/uk/2020/visitbritain/_assets/css"
+js:      "/uk/2020/visitbritain/_assets/js"
 
 # Build settings
 markdown: kramdown

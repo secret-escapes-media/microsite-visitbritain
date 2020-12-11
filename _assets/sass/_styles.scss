@@ -60,7 +60,7 @@ $background-colour: #17181b;
 
   // Interface for searching
   &__window {
-    overflow: scroll;
+    overflow: auto;
     position: absolute;
     z-index: $z-content-upper;
     top: 0; right: 0;
